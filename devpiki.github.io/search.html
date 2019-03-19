@@ -4,17 +4,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="9Ef5Uaca8SZOaY49wItpEK354fWLKam8NqWqoNzuSTs" /><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Piki’s blog | HTML, CSS, Javascript, Web Developer.</title>
+<title>Search | Piki’s blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Piki’s blog" />
+<meta property="og:title" content="Search" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="HTML, CSS, Javascript, Web Developer." />
 <meta property="og:description" content="HTML, CSS, Javascript, Web Developer." />
-<link rel="canonical" href="https://devpiki.github.io/" />
-<meta property="og:url" content="https://devpiki.github.io/" />
+<link rel="canonical" href="http://localhost:4000/search.html" />
+<meta property="og:url" content="http://localhost:4000/search.html" />
 <meta property="og:site_name" content="Piki’s blog" />
 <script type="application/ld+json">
-{"url":"https://devpiki.github.io/","headline":"Piki’s blog","name":"Piki’s blog","description":"HTML, CSS, Javascript, Web Developer.","@type":"WebSite","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/search.html","headline":"Search","description":"HTML, CSS, Javascript, Web Developer.","@type":"WebPage","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Font Awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
   
 
-  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://devpiki.github.io/feed.xml" title="Piki's blog" /></head>
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Piki's blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Piki&#39;s blog</a><nav class="site-nav">
@@ -51,21 +51,54 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">Mar 12, 2019</span>
-        <h3>
-          <a class="post-link" href="/javascript/web/2019/03/12/javascript-start.html">
-            Javascript Start
-          </a>
-        </h3></li><li><span class="post-meta">Mar 12, 2019</span>
-        <h3>
-          <a class="post-link" href="/css/web/2019/03/12/css-start.html">
-            CSS Start
-          </a>
-        </h3></li></ul>
+        <article class="post">
 
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
+  <header class="post-header">
+    <h1 class="post-title">Search</h1>
+  </header>
+
+  <div class="post-content">
+    <div class="search">
+    <div id="search-results"></div>
+    <p id="not-found" style="display: none">
+        No results found.
+    </p>
+</div>
+
+
+<script>
+    window.store = {
+    
+    "javascript-web-2019-03-12-javascript-start-html": {
+        "title": "Javascript Start",
+            "tags": "Javascript, Web",
+            "date": "March 12, 2019",
+            "author": "",
+            "categories": "[&quot;Javascript&quot;, &quot;Web&quot;]",
+            "content": "javascript startfunction a {    alert('aaa');}",
+        "url": "//javascript/web/2019/03/12/javascript-start.html"
+    }
+    ,
+    
+    "css-web-2019-03-12-css-start-html": {
+        "title": "CSS Start",
+            "tags": "CSS, Web",
+            "date": "March 12, 2019",
+            "author": "",
+            "categories": "[&quot;CSS&quot;, &quot;Web&quot;]",
+            "content": "css startbody {display:block;}",
+        "url": "//css/web/2019/03/12/css-start.html"
+    }
+    
+    
+    };
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.1/lunr.min.js"></script>
+<script src="/assets/js/search.js"></script>
+  </div>
+
+</article>
 
       </div>
     </main><footer class="site-footer h-card">
