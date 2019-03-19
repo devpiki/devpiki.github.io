@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://devpiki.github.io/sitemap.xml
