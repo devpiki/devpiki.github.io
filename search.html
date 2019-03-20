@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="ko"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <title>Search | Piki’s blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Search" />
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="ko" />
 <meta name="description" content="HTML, CSS, Javascript, Web Developer." />
 <meta property="og:description" content="HTML, CSS, Javascript, Web Developer." />
 <link rel="canonical" href="https://devpiki.github.io/search.html" />
@@ -37,7 +37,14 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/category/CSS/">CSS</a><a class="page-link" href="/category/Javascript/">Javascript</a><a class="page-link" href="/category/Web/">Web</a><!-- Search bar -->
+        <div class="trigger">
+          <!--<a class="page-link" href="/about/">About</a><a class="page-link" href="/category/CSS/">CSS</a><a class="page-link" href="/category/Javascript/">Javascript</a><a class="page-link" href="/category/Web/">Web</a><a class="page-link" href="/category/Web/page2.html">Web</a>-->
+          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/category/CSS/">CSS</a>
+          <a class="page-link" href="/category/Javascript/">Javascript</a>
+          <a class="page-link" href="/category/Web/">Web</a>
+
+          <!-- Search bar -->
           
             <form class="frm"  action="/search.html" method="get">
               <input type="text" id="search-box" name="query" placeholder="Search" class="">
@@ -69,11 +76,22 @@
 <script>
     window.store = {
     
+    "css-web-2019-03-20-css-start-html": {
+        "title": "CSS Start",
+            "tags": "CSS, Web",
+            "date": "March 20, 2019",
+            "author": "piki",
+            "categories": "[&quot;CSS&quot;, &quot;Web&quot;]",
+            "content": "css startbody {display:block;}",
+        "url": "//css/web/2019/03/20/css-start.html"
+    }
+    ,
+    
     "javascript-web-2019-03-12-javascript-start-html": {
         "title": "Javascript Start",
             "tags": "Javascript, Web",
             "date": "March 12, 2019",
-            "author": "",
+            "author": "piki",
             "categories": "[&quot;Javascript&quot;, &quot;Web&quot;]",
             "content": "javascript startfunction a {    alert('aaa');}",
         "url": "//javascript/web/2019/03/12/javascript-start.html"
@@ -84,7 +102,7 @@
         "title": "CSS Start",
             "tags": "CSS, Web",
             "date": "March 12, 2019",
-            "author": "",
+            "author": "piki",
             "categories": "[&quot;CSS&quot;, &quot;Web&quot;]",
             "content": "css startbody {display:block;}",
         "url": "//css/web/2019/03/12/css-start.html"
@@ -125,6 +143,7 @@
   </div>
 
 </footer>
-</body>
+<script id="dsq-count-scr" src="//devpiki.disqus.com/count.js" async></script>
+  </body>
 
 </html>
