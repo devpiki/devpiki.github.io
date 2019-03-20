@@ -24,6 +24,7 @@ github_username:  devpiki
 encoding: 'utf-8'
 google_fonts: "Nanum+Gothic:400,700"
 search: true # Enable the search feature
+lang: 'ko'
 
 # Build settings
 markdown: kramdown
@@ -54,14 +55,23 @@ category_path: "category" # <- default value
 category_layout: "category.html" # <- default value
 
 # PAGINATION
-#paginate: 5
-#paginate_path: "/blog/page:num/"
+paginate: 2
+paginate_path: "/blog/page:num/"
 
 #tag_dir: tag/
-layouts_dir: "_layout/"
+layouts_dir: _layouts
 
 str_search_no_results: "No results found."
 
 disqus:
   shortname: devpiki
 
+#에러 로그 관련 설정
+liquid:
+  error_mode:       warn
+  strict_filters:   true
+  strict_variables: false
+
+
+minima:
+  date_format: "%b %-d, %Y"
