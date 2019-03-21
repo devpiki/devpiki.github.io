@@ -34,6 +34,7 @@ plugins:
   - jekyll-category-pages
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate-v2
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -55,8 +56,16 @@ category_path: "category" # <- default value
 category_layout: "category.html" # <- default value
 
 # PAGINATION
-paginate: 2
-paginate_path: "/blog/page:num/"
+#paginate: 5
+#paginate_path: "/blog/page:num/"
+
+pagination:
+  enabled: true
+  per_page: 5
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+
 
 #tag_dir: tag/
 layouts_dir: _layouts
