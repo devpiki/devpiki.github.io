@@ -2,8 +2,8 @@
 layout: post
 title:  "타이틀 태그 h1 ~ h6"
 date:   2019-03-12 13:50:19 +0900
-categories: [HTML, Web]
-tags: [HTML, Web]
+categories: [html, web]
+tags: [html, web]
 comments: true
 author : piki
 ---
