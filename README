@@ -1,0 +1,5 @@
+bundle exec jekyll build -d ../_site
+bundle exec jekyll serve
+
+git push origin source
+git push origin master
