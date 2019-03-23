@@ -35,9 +35,9 @@ pagination:
     <em>{{ page }}</em>
 
     {% elsif page == 1 %}
-    <a href="{{ '/Javascript/index.html' | prepend: site.baseurl }}">{{ page }}</a>
+    <a href="{{ '/javascript/index.html' | prepend: site.baseurl }}">{{ page }}</a>
     {% else %}
-    <a href="{{ site.paginate_path | prepend: '/Javascript/' | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    <a href="{{ site.paginate_path | prepend: '/javascript/' | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     <!-- 페이지 번호를 나타내기 위한 코드. -->
     {% endif %}
     {% endfor %}
