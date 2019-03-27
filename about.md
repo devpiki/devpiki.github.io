@@ -13,7 +13,7 @@ permalink: /about/
 
 * 본업 : 개발자
 * 부업 : 강사
-* 석사 논문 : [HTML5 기반의 원격화상회의 시스템에 관한 사례 연구](http://www.riss.kr/link?id=T14860993)
+* 석사 논문 : [HTML5 기반의 원격화상회의 시스템에 관한 사례 연구](http://www.riss.kr/link?id=T14860993){:target="_blank"}
 <hr/>
 
 * [facebook](https://www.facebook.com/dev.piko)
