@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "속성 선택자 - Attribute Selectors"
-date:   2019-03-25 13:50:19 +0900
+title: "속성 선택자 - Attribute Selectors"
+date: 2019-03-25 13:50:19 +0900
 categories: [css, web]
 tags: [css, web]
 comments: true

@@ -20,7 +20,7 @@ exclude: true
             "tags": "{{ post.tags | join: ', ' }}",
             "date": "{{ post.date | date: '%B %-d, %Y' }}",
             "author": "{{ post.author | xml_escape }}",
-            "categories": "{{ post.categories | xml_escape }}",
+            "categories": "{{ post.categories | join: ', ' }}",
             "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}"
     }
@@ -29,5 +29,5 @@ exclude: true
     };
 </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.1/lunr.min.js"></script>
-<script src="/assets/js/search.js"></script>
+<script src="/assets/js/lunr.min.js" charset="utf-8"></script>
+<script src="/assets/js/search.js" charset="utf-8"></script>

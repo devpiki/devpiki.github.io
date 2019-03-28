@@ -60,7 +60,7 @@
             "id": key,
             "title": postJSON.title,
             "author": postJSON.author,
-            "category": postJSON.category,
+            "categories": postJSON.categories,
             "content": postJSON.content
         });
     }
@@ -68,15 +68,22 @@
     function search(searchTerm) {
         setSearchBoxValue(searchTerm);
 
-        var lunrIndex = lunr(function () {
+       /* var lunrIndex = lunr(function () {
             this.field("id");
             this.field("title", {
                 boost: 10
             });
             this.field("author");
-            this.field("category");
+            this.field("categories");
             this.field("content");
-        });
+        });*/
+
+        var lunrIndex = new lunr.Index;
+        lunrIndex.field('id');
+        lunrIndex.field('title', { boost: 10 });
+        lunrIndex.field('author');
+        lunrIndex.field('categories');
+        lunrIndex.field('content');
 
         for (var key in window.store) {
             addPostToSearchIndex(lunrIndex, key, window.store[key])

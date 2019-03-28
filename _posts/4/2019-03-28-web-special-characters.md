@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "특수 문자 표"
-date:   2019-03-28 13:50:19 +0900
+date: 2019-03-28 13:50:19 +0900
 categories: [web]
-tags: [web, javascript, css]
+tags: [web, 특수 문자, special characters]
 comments: true
 author : piki
 ---

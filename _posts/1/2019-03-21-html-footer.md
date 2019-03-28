@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "footer 태그"
-date:   2019-03-12 13:50:19 +0900
+title: "footer 태그"
+date: 2019-03-12 13:50:19 +0900
 categories: [html, web]
 tags: [html, web]
 comments: true

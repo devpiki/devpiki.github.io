@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "가상클래스(추상클래스, 수도클래스, pseudo-class)"
-date:   2019-03-26 13:50:19 +0900
+title: "가상클래스(추상클래스, 수도클래스, pseudo-class)"
+date: 2019-03-26 13:50:19 +0900
 categories: [css, web]
 tags: [css, web]
 comments: true
