@@ -1,5 +1,9 @@
-bundle exec jekyll build -d ../master
 bundle exec jekyll serve
+bundle exec jekyll build -d ../master
+
+# 배포용 빌드
+cross-env JEKYLL_ENV=production jekyll build -d ../master
+(cross-env가 안깔려 있으면 : npm i -g cross-env)
 
 git push origin source
 git push origin master

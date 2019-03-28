@@ -84,3 +84,6 @@ liquid:
 
 minima:
   date_format: "%b %-d, %Y"
+
+
+google_analytics: UA-137162245-1
