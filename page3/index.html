@@ -14,6 +14,7 @@
 <title>Page 3 of 8 for Piki’s blog - page 3 | Piki’s blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Piki’s blog - page 3" />
+<meta name="author" content="Piki" />
 <meta property="og:locale" content="ko" />
 <meta name="description" content="HTML, CSS, Javascript, Web Developer." />
 <meta property="og:description" content="HTML, CSS, Javascript, Web Developer." />
@@ -23,7 +24,7 @@
 <link rel="prev" href="https://devpiki.github.io/page2/index.html" />
 <link rel="next" href="https://devpiki.github.io/page4/index.html" />
 <script type="application/ld+json">
-{"url":"https://devpiki.github.io/page3/","headline":"Piki’s blog - page 3","description":"HTML, CSS, Javascript, Web Developer.","@type":"WebPage","@context":"http://schema.org"}</script>
+{"url":"https://devpiki.github.io/page3/","author":{"@type":"Person","name":"Piki"},"headline":"Piki’s blog - page 3","description":"HTML, CSS, Javascript, Web Developer.","@type":"WebPage","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Font Awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -48,7 +49,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Piki&#39;s blog</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><i class="fa fa-file-code-o fa-2" aria-hidden="true"></i>Piki&#39;s blog</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -78,70 +79,89 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         </div>
       </nav></div>
 </header>
+
+<div class="site-header-container">
+  <div class="scrim has-cover">
+    <header class="site-header">
+      <h1 class="title">Piki's blog</h1>
+      <p class="subtitle">Javascript, HTML, CSS, Web</p>
+    </header>
+  </div>
+</div>
+
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="home">
 <!--<h1 class="page-heading">Piki's blog - page 3</h1>-->
 
-  <h2 class="post-list-heading">Posts</h2>
+  <!-- <h2 class="post-list-heading">Posts</h2> -->
     <ul class="post-list">
         
-        <li><span class="post-meta">Mar 24, 2019</span>
-            <h3>
+        <li><h3>
                 <a class="post-link" href="/html/web/2019/03/24/html-input.html">
                     input 태그
                 </a>
-            </h3></li>
+            </h3>
+            <p>
+                "disabled, readonly&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form action=\"atest.html\" method=\"get\" &gt; &lt;input type=\"text\" name=\"txt1\" /&gt; &lt;input type=\"text\" name=\"txt2\" disabled value=\"test123\" /&gt; &lt;input type=\"text\" name=\"txt3\" readonly value=\"test123\" /&gt; &lt;input type=\"submit\" value=\"Submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;maxlength, name, size&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form action=\"atest.html\" method=\"get\" &gt; &lt;input type=\"text\" name=\"txt1\" maxlength=\"5\"  /&gt; &lt;input type=\"submit\" value=\"Submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;value&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form action=\"atest.html\" method=\"get\" &gt; &lt;!-- button, reset, submit  --&gt; &lt;input type=\"button\" name=\"btn1\" value=\"Button Title\" /&gt;&lt;br/&gt; &lt;!-- text, password, hidden --&gt; &lt;input type=\"text\" name=\"val1\" value=\"init value\" /&gt;&lt;br/&gt; &lt;!-- checkbox, radio, image --&gt; &lt;input type=\"radio\" name=\"ra1\" value=\"1\" /&gt; One &lt;br/&gt; &lt;input type=\"radio\" name=\"ra1\" value=\"2\" /&gt; Two &lt;br/&gt; &lt;input type=\"radio\" name=\"ra1\" value=\"3\" /&gt; Three &lt;br/&gt;  &lt;!-- value not work --&gt; &lt;input type=\"file\" value=\"12345\" /&gt; &lt;input type=\"submit\" value=\"Submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;placeholder&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form action=\"atest.html\" method=\"get\" &gt; &lt;!-- text, search, url, tel, email, and password --&gt; &lt;input type=\"text\" name=\"fname\" placeholder=\"First name\"&gt;&lt;br&gt; &lt;input type=\"text\" name=\"lname\" placeholder=\"Last name\"&gt;&lt;br&gt; &lt;input type=\"submit\" value=\"Submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;list, autocomplete&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form action=\"atest.html\" method=\"get\" &gt; &lt;input list=\"b1\" autocomplete=\"off\" name=\"browser\"&gt; &lt;datalist id=\"b1\"&gt;   &lt;option value=\"Internet Explorer\" /&gt;   &lt;option value=\"Firefox\" /&gt;   &lt;option value=\"Google Chrome\" /&gt;   &lt;option value=\"Opera\" /&gt;   &lt;option value=\"Safari\" /&gt; &lt;/datalist&gt; &lt;input type=\"submit\" value=\"Submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;autocomplete, autofocus```html&lt;!DOCTYPE html&gt;    test   "
+            </p>
+            <span class="post-meta">Mar 24, 2019</span></li>
         
-        <li><span class="post-meta">Mar 24, 2019</span>
-            <h3>
+        <li><h3>
                 <a class="post-link" href="/html/web/2019/03/24/html-fieldset.html">
                     fieldset, legend
                 </a>
-            </h3></li>
+            </h3>
+            <p>
+                "fieldset&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form&gt; &lt;fieldset&gt;  Name: &lt;input type=\"text\"&gt;&lt;br&gt;  Email: &lt;input type=\"text\"&gt;&lt;br&gt;  Date of birth: &lt;input type=\"text\"&gt; &lt;/fieldset&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;legend&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form&gt; &lt;fieldset&gt; \t&lt;legend&gt;Personalia:&lt;/legend&gt;  Name: &lt;input type=\"text\"&gt;&lt;br&gt;  Email: &lt;input type=\"text\"&gt;&lt;br&gt;  Date of birth: &lt;input type=\"text\"&gt; &lt;/fieldset&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;fieldset - disabled&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form&gt; &lt;fieldset disabled&gt; \t&lt;legend&gt;Personalia:&lt;/legend&gt;  Name: &lt;input type=\"text\"&gt;&lt;br&gt;  Email: &lt;input type=\"text\"&gt;&lt;br&gt;  Date of birth: &lt;input type=\"text\"&gt; &lt;/fieldset&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;"
+            </p>
+            <span class="post-meta">Mar 24, 2019</span></li>
         
-        <li><span class="post-meta">Mar 23, 2019</span>
-            <h3>
+        <li><h3>
                 <a class="post-link" href="/html/web/2019/03/23/html-form.html">
                     form 태그
                 </a>
-            </h3></li>
+            </h3>
+            <p>
+                "기본 태그&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;form test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form name=\"frm\" action=\"atest.html\" method=\"get\"&gt;  &lt;input type=\"text\" name=\"txt1\" /&gt;  &lt;input type=\"text\" name=\"txt2\" /&gt;  &lt;input type=\"submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;accept-charset&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;form test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form name=\"frm\" action=\"atest.html\" method=\"get\" accept-charset=\"UTF-8\"&gt;  &lt;input type=\"text\" name=\"txt1\" /&gt;  &lt;input type=\"text\" name=\"txt2\" /&gt;  &lt;input type=\"submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;autocomplete&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;form test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form name=\"frm\" action=\"atest.html\" method=\"get\" autocomplete=\"off\"&gt;  &lt;input type=\"text\" name=\"txt1\" /&gt;  &lt;input type=\"text\" name=\"txt2\" /&gt;  &lt;input type=\"submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;enctype&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;form test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form name=\"frm\" action=\"atest.html\" method=\"post\" enctype=\"application/x-www-form-urlencoded\"&gt;  &lt;input type=\"text\" name=\"txt1\" /&gt;  &lt;input type=\"text\" name=\"txt2\" /&gt;  &lt;input type=\"submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;novalidate&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;form test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form name=\"frm\" action=\"atest.html\" method=\"get\" novalidate&gt;  &lt;input type=\"email\" name=\"email_txt\"&gt;  &lt;input type=\"submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;target - _blank, _self&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;form test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form name=\"frm\" action=\"atest.html\" method=\"get\" target=\"_blank\"&gt;  &lt;input type=\"text\" name=\"txt1\" /&gt;  &lt;input type=\"text\" name=\"txt2\" /&gt;  &lt;input type=\"submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;결과target - _parent, _top&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;!-- frametest.html --&gt;&lt;frameset rows=\"10%,*\"&gt;  &lt;frame src=\"ptest.html\"&gt;  &lt;frame src=\"frametest2.html\"&gt;  &lt;noframes&gt;Sorry, your browser does not handle frames!&lt;/noframes&gt;&lt;/frameset&gt;&lt;/html&gt;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;!-- frametest2.html --&gt;&lt;frameset cols=\"15%,*\"&gt;    &lt;frame src=\"dltest.html\" /&gt;    &lt;frame src=\"formtest2.html\" /&gt;  &lt;/frameset&gt;&lt;/html&gt;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;!-- formtest2.html --&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;form test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form name=\"frm\" action=\"atest.html\" method=\"get\" target=\"_parent\"&gt;  &lt;input type=\"text\" name=\"txt1\" /&gt;  &lt;input type=\"text\" name=\"txt2\" /&gt;  &lt;input type=\"submit\"&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;결과target - framename&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;!-- formtest3.html --&gt;&lt;head&gt;  &lt;meta charset=\"UTF-8\"&gt;  &lt;title&gt;form test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form name=\"frm\" action=\"atest.html\" method=\"get\" target=\"frm2\"&gt;  &lt;input type=\"text\" name=\"txt1\" /&gt;  &lt;input type=\"text\" name=\"txt2\" /&gt;  &lt;input type=\"submit\"&gt;&lt;/form&gt;&lt;iframe name=\"frm2\" src=\"ptest.html\"&gt;&lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt;결과"
+            </p>
+            <span class="post-meta">Mar 23, 2019</span></li>
         
-        <li><span class="post-meta">Mar 23, 2019</span>
-            <h3>
+        <li><h3>
                 <a class="post-link" href="/html/web/2019/03/23/html-frame.html">
                     frame 태그
                 </a>
-            </h3></li>
+            </h3>
+            <p>
+                "cols&lt;!DOCTYPE html&gt;&lt;html lang=\"ko\"&gt;  &lt;frameset cols=\"25%,*,25%\"&gt;    &lt;frame src=\"atest.html\"&gt;    &lt;frame src=\"dltest.html\"&gt;    &lt;frame src=\"ptest.html\"&gt;  &lt;/frameset&gt;&lt;/html&gt;rows&lt;!DOCTYPE html&gt;&lt;html lang=\"ko\"&gt;  &lt;frameset rows=\"25%,*,25%\"&gt;    &lt;frame src=\"atest.html\"&gt;    &lt;frame src=\"dltest.html\"&gt;    &lt;frame src=\"ptest.html\"&gt;  &lt;/frameset&gt;&lt;/html&gt;noframes&lt;!DOCTYPE html&gt;&lt;html lang=\"ko\"&gt;  &lt;frameset rows=\"25%,*,25%\"&gt;    &lt;frame src=\"atest.html\"&gt;    &lt;frame src=\"dltest.html\"&gt;    &lt;frame src=\"ptest.html\"&gt;    &lt;noframes&gt;이 브라우저는 프레임을 지원하지 않습니다.&lt;/noframes&gt;  &lt;/frameset&gt;&lt;/html&gt;target&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;!-- frametest.html --&gt;  &lt;frameset rows=\"10%,*\"&gt;    &lt;frame src=\"ptest.html\"&gt;    &lt;frame src=\"frametest2.html\"&gt;  &lt;/frameset&gt;&lt;/html&gt;&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;!-- frametest2.html --&gt;  &lt;frameset cols=\"15%,*\"&gt;    &lt;frame src=\"dltest.html\" /&gt;    &lt;frame src=\"atest.html\" /&gt;  &lt;/frameset&gt;&lt;/html&gt;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;!-- atest.html --&gt;&lt;head&gt;  &lt;meta charset=\"utf-8\" /&gt;  &lt;title&gt;a 태그&lt;/title&gt;&lt;/head&gt;&lt;body&gt;  &lt;p&gt;    &lt;a href=\"oltest.html\" target=\"_parent\"&gt;target=\"_parent\"&lt;/a&gt;  &lt;/p&gt;  &lt;p&gt;    &lt;a href=\"oltest.html\" target=\"_top\"&gt;target=\"_top\"&lt;/a&gt;  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;결과"
+            </p>
+            <span class="post-meta">Mar 23, 2019</span></li>
         
-        <li><span class="post-meta">Mar 22, 2019</span>
-            <h3>
+        <li><h3>
                 <a class="post-link" href="/html/web/2019/03/22/html-a.html">
                     a 태그
                 </a>
-            </h3></li>
+            </h3>
+            <p>
+                "&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;meta charset=\"utf-8\" /&gt;  &lt;title&gt;a 태그&lt;/title&gt;&lt;/head&gt;&lt;body&gt;  &lt;!-- 텍스트에 태그  --&gt;  &lt;p&gt;    &lt;a href=\"https://www.daum.net\"&gt;DAUM&lt;/a&gt;  &lt;/p&gt;  &lt;!-- 이미지에 태그  --&gt;  &lt;p&gt;    &lt;a href=\"https://www.daum.net\"&gt;&lt;img src=\"../../logo.png\" /&gt;&lt;/a&gt;  &lt;/p&gt;  &lt;!-- target  --&gt;  &lt;p&gt;  &lt;a href=\"https://www.daum.net\" target=\"_blank\"&gt;DAUM&lt;/a&gt;  &lt;/p&gt;  &lt;p&gt;  &lt;a href=\"https://www.daum.net\" target=\"_self\"&gt;DAUM&lt;/a&gt;  &lt;/p&gt;  &lt;p&gt;  &lt;a href=\"oltest.html\" target=\"ultest\"&gt;OL test&lt;/a&gt;  &lt;/p&gt;  &lt;p&gt;  &lt;iframe src=\"ultest.html\" name=\"ultest\"&gt;&lt;/iframe&gt;  &lt;/p&gt;  &lt;!-- download  --&gt;  &lt;p&gt;    &lt;a href=\"../../logo.png\" download&gt;      &lt;img src=\"../../logo.png\" /&gt;    &lt;/a&gt;  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;결과"
+            </p>
+            <span class="post-meta">Mar 22, 2019</span></li>
         
     </ul>
   <!-- Pagination links -->
     
         <div class="pagination">
             
-            <a href="/page2/index.html">
-                &laquo; Prev
-            </a>
+            <a href="/page2/index.html"><i class="fa fa-backward" aria-hidden="true"></i></a>
             
 
             
             
-            <a href="/page2/index.html">
-                1
-            </a>
+            <a href="/">1</a>
             
             
             
-            <a href="/page2">
-                2
-            </a>
+            <a href="/page2">2</a>
             
             
             
@@ -149,40 +169,27 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
             
             
             
-            <a href="/page4">
-                4
-            </a>
+            <a href="/page4">4</a>
             
             
             
-            <a href="/page5">
-                5
-            </a>
+            <a href="/page5">5</a>
             
             
             
-            <a href="/page6">
-                6
-            </a>
+            <a href="/page6">6</a>
             
             
             
-            <a href="/page7">
-                7
-            </a>
+            <a href="/page7">7</a>
             
             
             
-            <a href="/page8">
-                8
-            </a>
+            <a href="/page8">8</a>
             
             
-
             
-            <a href="/page4/index.html">
-                Next &raquo;
-            </a>
+            <a href="/page4/index.html"><i class="fa fa-forward" aria-hidden="true"></i></a>
             
         </div>
     
@@ -199,10 +206,10 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">Piki&#39;s blog</li><li><a class="u-email" href="mailto:dev.piki@gmail.com">dev.piki@gmail.com</a></li></ul>
+          <li class="p-name">Piki</li><li><a class="u-email" href="mailto:dev.piki@gmail.com">dev.piki@gmail.com</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/devpiki"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">devpiki</span></a></li><li><a href="https://www.twitter.com/dev_piki"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">dev_piki</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/dev.piko"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">dev.piko</span></a></li><li><a href="https://github.com/devpiki"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">devpiki</span></a></li><li><a href="https://www.twitter.com/dev_piki"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">dev_piki</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
