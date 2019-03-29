@@ -3,7 +3,7 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><i class="fa fa-file-code-o fa-2" aria-hidden="true"></i>{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -45,3 +45,13 @@
     {%- endif -%}
   </div>
 </header>
+{% if page.path == 'index.html'  %}
+<div class="site-header-container">
+  <div class="scrim has-cover">
+    <header class="site-header">
+      <h1 class="title">Piki's blog</h1>
+      <p class="subtitle">Javascript, HTML, CSS, Web</p>
+    </header>
+  </div>
+</div>
+{% endif %}

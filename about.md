@@ -20,5 +20,5 @@ permalink: /about/
 * [github](https://github.com/devpiki)
 <hr/>
 
-* 이 블로그는 기본 Jekyll theme 로 이루어져 있습니다.
+* 이 블로그는 jekyll 3.8.5 , minima 테마로 만들어 졌습니다.
 

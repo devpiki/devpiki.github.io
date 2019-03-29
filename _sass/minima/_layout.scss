@@ -2,9 +2,9 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
+  /*border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;*/
+  min-height: $spacing-unit + 25;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -21,6 +21,10 @@
   &,
   &:visited {
     color: $grey-color-dark;
+  }
+
+  i {
+    margin-right: 15px;
   }
 }
 
@@ -190,10 +194,33 @@
 
 .post-list {
   margin-left: 0;
+  margin-bottom: 30px;
   list-style: none;
 
-  > li {
-    margin-bottom: $spacing-unit;
+  > li:not(:last-child) {
+    margin-bottom: $spacing-unit-20;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: $spacing-unit-20;
+  }
+
+  h3 {
+    margin : 0;
+  }
+
+  h3 > a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
   }
 }
 
@@ -204,7 +231,7 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.1);
 }
 
 
@@ -288,3 +315,43 @@
     }
   }
 }
+
+/*Paging*/
+.pagination {
+  text-align : center;
+  a, em {
+    margin: 0 5px;
+    font: normal normal normal 17px/1 FontAwesome;
+  }
+  em {
+    font-weight: 900;
+  }
+  a {
+    color : #999;
+  }
+}
+
+.site-header-container {
+    color: #fff;
+    background: linear-gradient( rgba(0,0,0, .7), rgba(0,0,0, .7)), url(/assets/img/main.jpg);
+    background-size: cover;
+    .site-header {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      .title {
+          font-size: 2.985984em
+      }
+      .subtitle {
+       font-size: 1.2em
+      }
+    }
+
+    .has-cover {
+        display: table;
+        width: 100%;
+        height: 18em;
+        padding: 0em !important;
+    }
+}
+

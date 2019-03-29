@@ -7,3 +7,12 @@ cross-env JEKYLL_ENV=production jekyll build -d ../master
 
 git push origin source
 git push origin master
+
+# Liquid 문법
+https://shopify.github.io/liquid/
+
+# jekyll document 
+https://jekyllrb-ko.github.io/docs/home/ (v.3.8.1, 한글)
+https://jekyllrb.com/docs/ (v.3.8.5, 영어)
+
+# 이 블로그는 jekyll 3.8.5 , minima 테마로 만들어 졌습니다.

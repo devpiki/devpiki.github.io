@@ -16,15 +16,19 @@
 title: Piki's blog
 email: dev.piki@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  HTML, CSS, Javascript, Web Developer.
+  HTML, CSS, Javascript, Web Developer. 
+  jekyll 3.8.5. 
+  minima theme.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://devpiki.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dev_piki
-github_username:  devpiki
+github_username: devpiki
+facebook_username: dev.piko
 encoding: 'utf-8'
 google_fonts: "Nanum+Gothic:400,700"
 search: true # Enable the search feature
 lang: 'ko'
+author: Piki
 
 # Build settings
 markdown: kramdown
@@ -70,7 +74,7 @@ pagination:
 #tag_dir: tag/
 layouts_dir: _layouts
 
-str_search_no_results: "No results found."
+str_search_no_results: "존재하지 않습니다."
 
 disqus:
   shortname: devpiki
