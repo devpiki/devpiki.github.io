@@ -11,20 +11,20 @@
 
 
   <meta name="google-site-verification" content="9Ef5Uaca8SZOaY49wItpEK354fWLKam8NqWqoNzuSTs" /><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>imagemap | Piki’s blog</title>
+<title>text-indent, text-transform | Piki’s blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="imagemap" />
+<meta property="og:title" content="text-indent, text-transform" />
 <meta name="author" content="piki" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="```html &lt;!DOCTYPE html&gt; image map test" />
-<meta property="og:description" content="```html &lt;!DOCTYPE html&gt; image map test" />
-<link rel="canonical" href="https://devpiki.github.io/html/web/2019/03/22/html-map.html" />
-<meta property="og:url" content="https://devpiki.github.io/html/web/2019/03/22/html-map.html" />
+<meta name="description" content="text-indent ```html &lt;!DOCTYPE html&gt;" />
+<meta property="og:description" content="text-indent ```html &lt;!DOCTYPE html&gt;" />
+<link rel="canonical" href="https://devpiki.github.io/css/web/2019/04/01/css-text.html" />
+<meta property="og:url" content="https://devpiki.github.io/css/web/2019/04/01/css-text.html" />
 <meta property="og:site_name" content="Piki’s blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-03-22T13:50:19+09:00" />
+<meta property="article:published_time" content="2019-04-01T09:50:19+09:00" />
 <script type="application/ld+json">
-{"url":"https://devpiki.github.io/html/web/2019/03/22/html-map.html","author":{"@type":"Person","name":"piki"},"headline":"imagemap","description":"```html &lt;!DOCTYPE html&gt; image map test","datePublished":"2019-03-22T13:50:19+09:00","dateModified":"2019-03-22T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/html/web/2019/03/22/html-map.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://devpiki.github.io/css/web/2019/04/01/css-text.html","author":{"@type":"Person","name":"piki"},"headline":"text-indent, text-transform","description":"text-indent ```html &lt;!DOCTYPE html&gt;","datePublished":"2019-04-01T09:50:19+09:00","dateModified":"2019-04-01T09:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/css/web/2019/04/01/css-text.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Font Awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -85,31 +85,95 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-  <h1 class="post-title p-name" itemprop="name headline">imagemap</h1>
+  <h1 class="post-title p-name" itemprop="name headline">text-indent, text-transform</h1>
   <p class="post-meta">
-    <time class="dt-published" datetime="2019-03-22T13:50:19+09:00" itemprop="datePublished">Mar 22, 2019
+    <time class="dt-published" datetime="2019-04-01T09:50:19+09:00" itemprop="datePublished">Apr 1, 2019
     </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">piki</span></span></p>
 </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+    <h2 id="text-indent">text-indent</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;title&gt;</span>image map test<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">div</span><span class="nc">.a</span> <span class="p">{</span><span class="nl">text-indent</span><span class="p">:</span> <span class="m">50px</span><span class="p">;}</span>
+<span class="nt">div</span><span class="nc">.b</span> <span class="p">{</span><span class="nl">text-indent</span><span class="p">:</span> <span class="m">-2em</span><span class="p">;}</span>
+<span class="nt">div</span><span class="nc">.c</span> <span class="p">{</span><span class="nl">text-indent</span><span class="p">:</span> <span class="m">30%</span><span class="p">;}</span>
+<span class="nt">&lt;/style&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 <span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../planets.gif"</span> <span class="na">width=</span><span class="s">"145"</span> <span class="na">height=</span><span class="s">"126"</span> <span class="na">alt=</span><span class="s">"Planets"</span> <span class="na">usemap=</span><span class="s">"#planetmap"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;map</span> <span class="na">name=</span><span class="s">"planetmap"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;area</span> <span class="na">shape=</span><span class="s">"rect"</span> <span class="na">coords=</span><span class="s">"0,0,82,126"</span> <span class="na">alt=</span><span class="s">"Sun"</span> <span class="na">href=</span><span class="s">"ptest.html"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;area</span> <span class="na">shape=</span><span class="s">"circle"</span> <span class="na">coords=</span><span class="s">"90,58,3"</span> <span class="na">alt=</span><span class="s">"Mercury"</span> <span class="na">href=</span><span class="s">"oltest.html"</span>  <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;area</span> <span class="na">shape=</span><span class="s">"circle"</span> <span class="na">coords=</span><span class="s">"124,58,8"</span> <span class="na">alt=</span><span class="s">"Venus"</span> <span class="na">href=</span><span class="s">"dltest.html"</span>  <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;/map&gt;</span>
+<span class="nt">&lt;h1&gt;</span>The text-indent Property<span class="nt">&lt;/h1&gt;</span>
+
+<span class="nt">&lt;h2&gt;</span>text-indent: 50px:<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"a"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h2&gt;</span>text-indent: -2em:<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"b"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h2&gt;</span>text-indent: 30%:<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
-<p><strong><a href="/assets/sample/html/imagemaptest.html">결과</a></strong></p>
+
+<h2 id="text-decoration">text-decoration</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">h1</span> <span class="p">{</span><span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">overline</span><span class="p">;}</span>
+<span class="nt">h2</span> <span class="p">{</span><span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">line-through</span><span class="p">;}</span>
+<span class="nt">h3</span> <span class="p">{</span><span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;}</span>
+<span class="nt">h4</span> <span class="p">{</span><span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span> <span class="nb">overline</span><span class="p">;}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+<span class="nt">&lt;h1&gt;</span>This is heading 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>This is heading 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>This is heading 3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>This is heading 4<span class="nt">&lt;/h4&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="text-decoration-styleie-not-support">text-decoration style(IE not support)</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">p</span> <span class="p">{</span><span class="nl">text-decoration-line</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;}</span>
+<span class="nt">p</span><span class="nc">.a</span> <span class="p">{</span>
+  <span class="nl">-webkit-text-decoration-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="c">/* Safari */</span>  
+  <span class="nl">text-decoration-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span><span class="nc">.b</span> <span class="p">{</span><span class="nl">text-decoration-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;}</span>
+<span class="nt">p</span><span class="nc">.c</span> <span class="p">{</span><span class="nl">text-decoration-style</span><span class="p">:</span> <span class="n">wavy</span><span class="p">;}</span>
+<span class="nt">p</span><span class="nc">.d</span> <span class="p">{</span><span class="nl">text-decoration-style</span><span class="p">:</span> <span class="nb">double</span><span class="p">;}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"a"</span><span class="nt">&gt;</span>The color of the underline should now be red!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"b"</span><span class="nt">&gt;</span>This is some text with a solid underline.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c"</span><span class="nt">&gt;</span>This is some text with a wavy underline.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"d"</span><span class="nt">&gt;</span>This is some text with a double underline.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
 
   </div>
 <div id="disqus_thread"></div>
@@ -132,7 +196,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a></noscript><a class="u-url" href="/html/web/2019/03/22/html-map.html" hidden></a>
+    Disqus.</a></noscript><a class="u-url" href="/css/web/2019/04/01/css-text.html" hidden></a>
 </article>
 
       </div>
