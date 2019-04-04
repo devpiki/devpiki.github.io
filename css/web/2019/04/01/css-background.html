@@ -60,7 +60,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         </label>
 
         <div class="trigger">
-          <!--<a class="page-link" href="/about/">About</a><a class="page-link" href="/category/css/">css</a><a class="page-link" href="/category/html/">html</a><a class="page-link" href="/category/web/">web</a><a class="page-link" href="/javascript/index.html">Javascript</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a>-->
+          <!--<a class="page-link" href="/about/">About</a><a class="page-link" href="/category/css/">css</a><a class="page-link" href="/category/html/">html</a><a class="page-link" href="/category/web/">web</a><a class="page-link" href="/javascript/index.html">Javascript</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a>-->
           <a class="page-link" href="/about/">About</a>
           <a class="page-link" href="/html/">HTML</a>
           <a class="page-link" href="/css/">CSS</a>
@@ -238,6 +238,225 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h2 id="background-attachment--이미지를-고정할지-스크롤할지를-선택">background-attachment : 이미지를 고정할지 스크롤할지를 선택</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">body</span>  <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("https://www.w3schools.com/cssref/img_tree.gif")</span><span class="p">;</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>
+  <span class="nl">background-attachment</span><span class="p">:</span> <span class="nb">fixed</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"margin-bottom:1000px;"</span><span class="nt">&gt;</span>The background-image is fixed. Try to scroll down the page.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>If you do not see any scrollbars, try to resize the browser window.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="background--단축-속성">background : 단축 속성</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">body</span>  <span class="p">{</span>
+	<span class="nl">background</span> <span class="p">:</span> <span class="no">gray</span> <span class="sx">url("https://www.w3schools.com/cssref/img_tree.gif")</span> <span class="nb">no-repeat</span> <span class="nb">fixed</span> <span class="m">10px</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"margin-bottom:1000px;"</span><span class="nt">&gt;</span>The background-image is fixed. Try to scroll down the page.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>If you do not see any scrollbars, try to resize the browser window.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="background-size--바탕화면-사이즈">background-size : 바탕화면 사이즈</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("https://www.w3schools.com/images/compatible_chrome.gif")</span><span class="p">;</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span> <span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex1</span> <span class="p">{</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex2</span> <span class="p">{</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex3</span> <span class="p">{</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">300px</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex4</span> <span class="p">{</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex5</span> <span class="p">{</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">100%</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex6</span> <span class="p">{</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex7</span> <span class="p">{</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-size: auto<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-size: 300px<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-size: 300px 10px<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex4"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-size: 20%<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-size: 100% 100%<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex6"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-size: cover<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex7"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-size: contain<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="background-origin--배경-이미지의-시작-위치를-정함">background-origin : 배경 이미지의 시작 위치를 정함</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("https://www.w3schools.com/images/compatible_chrome.gif")</span><span class="p">;</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span> <span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">25px</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span><span class="m">10px</span> <span class="nb">dotted</span> <span class="m">#000000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex1</span> <span class="p">{</span>
+  <span class="nl">background-origin</span><span class="p">:</span><span class="n">padding-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex2</span> <span class="p">{</span>
+  <span class="nl">background-origin</span><span class="p">:</span><span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex3</span> <span class="p">{</span>
+  <span class="nl">background-origin</span><span class="p">:</span><span class="n">content-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-origin:padding-box<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-origin:border-box<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-origin:content-box<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="background-clip--배경색을-어디까지-칠해-줘야-하는지-결정">background-clip : 배경색을 어디까지 칠해 줘야 하는지 결정</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">background-color</span> <span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span> <span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">25px</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span><span class="m">10px</span> <span class="nb">dotted</span> <span class="m">#000000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex1</span> <span class="p">{</span>
+  <span class="nl">background-clip</span><span class="p">:</span><span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex2</span> <span class="p">{</span>
+  <span class="nl">background-clip</span><span class="p">:</span><span class="n">padding-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex3</span> <span class="p">{</span>
+  <span class="nl">background-clip</span><span class="p">:</span><span class="n">content-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-clip:border-box<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-clip:padding-box<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-clip:content-box<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="linear-gradient--background-에-그라데이션-표현">linear-gradient : background 에 그라데이션 표현</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span><span class="c">/*gradients를 지원하지 않는 브라우저를 위해*/</span>
+  <span class="nl">margin-bottom</span> <span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">25px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#ex1</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">#ex2</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">right</span><span class="p">,</span> <span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">#ex3</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">bottom</span> <span class="nb">right</span><span class="p">,</span> <span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">#ex4</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">90deg</span><span class="p">,</span> <span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">#ex5</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">,</span> <span class="no">green</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-image: linear-gradient(red, yellow)<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-image: linear-gradient(to right, red, yellow)<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-image: linear-gradient(to bottom right, red, yellow)<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex4"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-image: linear-gradient(90deg, red, yellow)<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ex5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>background-image: linear-gradient(red, yellow, green)<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
 
   </div>
 <div id="disqus_thread"></div>
