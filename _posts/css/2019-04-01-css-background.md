@@ -160,3 +160,228 @@ div.g  {background-position:50% 50%;}
 </html>
 ```
 
+## background-attachment : 이미지를 고정할지 스크롤할지를 선택
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  {
+  background-image: url("https://www.w3schools.com/cssref/img_tree.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+</head>
+<body>
+<p style="margin-bottom:1000px;">The background-image is fixed. Try to scroll down the page.</p>
+<p>If you do not see any scrollbars, try to resize the browser window.</p>
+</body>
+</html>
+```
+
+## background : 단축 속성
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  {
+	background : gray url("https://www.w3schools.com/cssref/img_tree.gif") no-repeat fixed 10px 30px;
+}
+</style>
+</head>
+<body>
+<p style="margin-bottom:1000px;">The background-image is fixed. Try to scroll down the page.</p>
+<p>If you do not see any scrollbars, try to resize the browser window.</p>
+</body>
+</html>
+```
+
+## background-size : 바탕화면 사이즈
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("https://www.w3schools.com/images/compatible_chrome.gif");
+  background-repeat: no-repeat;
+  margin-bottom : 10px;
+}
+#ex1 {
+  background-size: auto;
+}
+#ex2 {
+  background-size: 300px;
+}
+#ex3 {
+  background-size: 300px 10px;
+}
+#ex4 {
+  background-size: 20%;
+}
+#ex5 {
+  background-size: 100% 100%;
+}
+#ex6 {
+  background-size: cover;
+}
+#ex7 {
+  background-size: contain;
+}
+</style>
+</head>
+<body>
+<div id="ex1">
+  <p>background-size: auto</p>
+</div>
+<div id="ex2">
+  <p>background-size: 300px</p>
+</div>
+<div id="ex3">
+  <p>background-size: 300px 10px</p>
+</div>
+<div id="ex4">
+  <p>background-size: 20%</p>
+</div>
+<div id="ex5">
+  <p>background-size: 100% 100%</p>
+</div>
+<div id="ex6">
+  <p>background-size: cover</p>
+</div>
+<div id="ex7">
+  <p>background-size: contain</p>
+</div>
+</body>
+</html>
+```
+
+## background-origin : 배경 이미지의 시작 위치를 정함
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  padding: 25px;
+  background: url("https://www.w3schools.com/images/compatible_chrome.gif");
+  background-repeat: no-repeat;
+  margin-bottom : 30px;
+  padding:25px;
+  border:10px dotted #000000;
+}
+#ex1 {
+  background-origin:padding-box;
+}
+#ex2 {
+  background-origin:border-box;
+}
+#ex3 {
+  background-origin:content-box;
+}
+</style>
+</head>
+<body>
+<div id="ex1">
+  <p>background-origin:padding-box</p>
+</div>
+<div id="ex2">
+  <p>background-origin:border-box</p>
+</div>
+<div id="ex3">
+  <p>background-origin:content-box</p>
+</div>
+</body>
+</html>
+```
+
+## background-clip : 배경색을 어디까지 칠해 줘야 하는지 결정
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  padding: 25px;
+  background-color : yellow;
+  margin-bottom : 30px;
+  padding:25px;
+  border:10px dotted #000000;
+}
+#ex1 {
+  background-clip:border-box;
+}
+#ex2 {
+  background-clip:padding-box;
+}
+#ex3 {
+  background-clip:content-box;
+}
+</style>
+</head>
+<body>
+<div id="ex1">
+  <p>background-clip:border-box</p>
+</div>
+<div id="ex2">
+  <p>background-clip:padding-box</p>
+</div>
+<div id="ex3">
+  <p>background-clip:content-box</p>
+</div>
+</body>
+</html>
+```
+
+## linear-gradient : background 에 그라데이션 표현
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  padding: 25px;
+  background-color: red;/*gradients를 지원하지 않는 브라우저를 위해*/
+  margin-bottom : 30px;
+  padding:25px;
+}
+#ex1 {
+  background-image: linear-gradient(red, yellow);
+}
+#ex2 {
+  background-image: linear-gradient(to right, red, yellow);
+}
+#ex3 {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+#ex4 {
+  background-image: linear-gradient(90deg, red, yellow);
+}
+#ex5 {
+  background-image: linear-gradient(red, yellow, green);
+}
+</style>
+</head>
+<body>
+<div id="ex1">
+  <p>background-image: linear-gradient(red, yellow)</p>
+</div>
+<div id="ex2">
+  <p>background-image: linear-gradient(to right, red, yellow)</p>
+</div>
+<div id="ex3">
+  <p>background-image: linear-gradient(to bottom right, red, yellow)</p>
+</div>
+<div id="ex4">
+  <p>background-image: linear-gradient(90deg, red, yellow)</p>
+</div>
+<div id="ex5">
+  <p>background-image: linear-gradient(red, yellow, green)</p>
+</div>
+</body>
+</html>
+```

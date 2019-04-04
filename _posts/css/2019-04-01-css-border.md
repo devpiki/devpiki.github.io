@@ -186,3 +186,47 @@ author : piki
 </body>
 </html>
 ```
+
+## border-radius : 모서리를 둥글게 처리
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+	margin-bottom : 10px;
+    border: 2px solid red;
+  	padding: 10px;
+}
+#ex1 {
+  border-radius: 20px;
+}
+#ex2 {
+  border-radius: 20px 40px;
+}
+#ex3 {
+  border-radius: 20px 40px 60px;
+}
+#ex4 {
+  border-radius: 20px 40px 60px 80px;
+}
+</style>
+</head>
+<body>
+<div id="ex1">
+  <p>border-radius: 20px</p>
+</div>
+<div id="ex2">
+  <p>border-radius: 20px 40px</p>
+</div>
+
+<div id="ex3">
+  <p>border-radius: 20px 40px 60px</p>
+</div>
+
+<div id="ex4">
+  <p>border-radius: 20px 40px 60px 80px</p>
+</div>
+</body>
+</html>
+```
