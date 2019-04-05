@@ -15,6 +15,9 @@ pagination:
                 {{ post.title | escape }}
             </a>
         </h3>
+        <p>
+            {{ post.content | strip_html | strip_newlines | jsonify | slice:0,200}}
+        </p>
         {%- if site.show_excerpts -%}
         {{ post.excerpt }}
         {%- endif -%}
