@@ -16,15 +16,15 @@
 <meta property="og:title" content="css - 사용 방법" />
 <meta name="author" content="piki" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="External Style Sheet &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;test&lt;/title&gt; &lt;!-- 외부 스타일 시트 --&gt; &lt;link rel=”stylesheet” type=”text/css” href=”aaa.css”&gt; &lt;/head&gt; &lt;body&gt; 외부 스타일 시트 (External Style Sheet) &lt;/body&gt; &lt;/html&gt;" />
-<meta property="og:description" content="External Style Sheet &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;test&lt;/title&gt; &lt;!-- 외부 스타일 시트 --&gt; &lt;link rel=”stylesheet” type=”text/css” href=”aaa.css”&gt; &lt;/head&gt; &lt;body&gt; 외부 스타일 시트 (External Style Sheet) &lt;/body&gt; &lt;/html&gt;" />
+<meta name="description" content="External Style Sheet &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;title&gt;test&lt;/title&gt; &lt;!-- 외부 스타일 시트 --&gt; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;aaa.css&quot;&gt; &lt;/head&gt; &lt;body&gt; 외부 스타일 시트 (External Style Sheet) &lt;/body&gt; &lt;/html&gt;" />
+<meta property="og:description" content="External Style Sheet &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;title&gt;test&lt;/title&gt; &lt;!-- 외부 스타일 시트 --&gt; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;aaa.css&quot;&gt; &lt;/head&gt; &lt;body&gt; 외부 스타일 시트 (External Style Sheet) &lt;/body&gt; &lt;/html&gt;" />
 <link rel="canonical" href="https://devpiki.github.io/css/web/2019/03/25/css-init.html" />
 <meta property="og:url" content="https://devpiki.github.io/css/web/2019/03/25/css-init.html" />
 <meta property="og:site_name" content="Piki’s blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-03-25T13:50:19+09:00" />
 <script type="application/ld+json">
-{"url":"https://devpiki.github.io/css/web/2019/03/25/css-init.html","author":{"@type":"Person","name":"piki"},"headline":"css - 사용 방법","description":"External Style Sheet &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;test&lt;/title&gt; &lt;!-- 외부 스타일 시트 --&gt; &lt;link rel=”stylesheet” type=”text/css” href=”aaa.css”&gt; &lt;/head&gt; &lt;body&gt; 외부 스타일 시트 (External Style Sheet) &lt;/body&gt; &lt;/html&gt;","datePublished":"2019-03-25T13:50:19+09:00","dateModified":"2019-03-25T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/css/web/2019/03/25/css-init.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://devpiki.github.io/css/web/2019/03/25/css-init.html","author":{"@type":"Person","name":"piki"},"headline":"css - 사용 방법","description":"External Style Sheet &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;title&gt;test&lt;/title&gt; &lt;!-- 외부 스타일 시트 --&gt; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;aaa.css&quot;&gt; &lt;/head&gt; &lt;body&gt; 외부 스타일 시트 (External Style Sheet) &lt;/body&gt; &lt;/html&gt;","datePublished":"2019-03-25T13:50:19+09:00","dateModified":"2019-03-25T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/css/web/2019/03/25/css-init.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Font Awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -96,10 +96,10 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;title&gt;</span>test<span class="nt">&lt;/title&gt;</span>
   <span class="c">&lt;!-- 외부 스타일 시트 --&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">”stylesheet”</span> <span class="na">type=</span><span class="s">”text/css”</span> <span class="na">href=</span><span class="s">”aaa.css”</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"aaa.css"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 <span class="nt">&lt;body&gt;</span>
 외부 스타일 시트 (External Style Sheet)
@@ -111,10 +111,10 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;title&gt;</span>test<span class="nt">&lt;/title&gt;</span>
   <span class="c">&lt;!-- 내부 스타일 시트 --&gt;</span>
-  <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">”text/css”</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
   <span class="o">&lt;!</span><span class="nt">--</span>
   <span class="nt">body</span> <span class="p">{</span>
       <span class="nl">display</span><span class="p">:</span><span class="nb">block</span><span class="p">;}</span>
@@ -131,18 +131,26 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;title&gt;</span>test<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">”text/css”</span><span class="nt">&gt;</span>
-<span class="o">&lt;/</span><span class="nt">head</span><span class="o">&gt;</span>
-<span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">HTML</span> <span class="err">태그</span> <span class="err">내에</span> <span class="err">스타일</span> <span class="err">지정</span> <span class="nt">--</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="nt">body</span> <span class="nt">style</span><span class="o">=</span><span class="err">”</span><span class="nt">color</span><span class="nd">:red</span><span class="o">;</span><span class="err">”</span><span class="o">&gt;</span>
-<span class="nt">HTML</span> <span class="err">태그</span> <span class="err">내에</span> <span class="err">스타일</span> <span class="err">지정</span><span class="o">(</span><span class="nt">Inline</span> <span class="nt">Styles</span><span class="o">)</span>
-<span class="o">&lt;/</span><span class="nt">body</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="nt">html</span><span class="o">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="c">&lt;!-- HTML 태그 내에 스타일 지정 --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">style=</span><span class="s">"color:red;"</span><span class="nt">&gt;</span>
+HTML 태그 내에 스타일 지정 -Inline Styles
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 
+  </div>
+
+  <div class="PageNavigation">
+    
+      <a class="prev" href="/css/web/2019/03/25/css-attselector.html">&laquo; 속성 선택자 - Attribute Selectors</a>
+    
+    
+      <a class="next" href="/css/web/2019/03/25/css-selector.html">Selectors &raquo;</a>
+    
   </div>
 <div id="disqus_thread"></div>
 <script>
