@@ -174,7 +174,7 @@ div.sticky {
 <!DOCTYPE html>
 <html lang="ko">
 <head><title>CSS</title>
-<meta charset="utf-8">
+<meta charset="UTF-8"/>
 <style type="text/css">
   li{ list-style-type:none; }
   h2 { font-size:0; line-height:0; width:0; height:0; position:absolute; left:-9999px; }

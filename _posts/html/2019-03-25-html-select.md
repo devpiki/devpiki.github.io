@@ -8,12 +8,12 @@ comments: true
 author : piki
 ---
 
-##select
+## select
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -30,12 +30,12 @@ author : piki
 </html>
 ```
 
-##autofocus, name
+## autofocus, name
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -52,12 +52,12 @@ author : piki
 </html>
 ```
 
-##disabled
+## disabled
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -75,12 +75,12 @@ author : piki
 ```
 
 
-##size
+## size
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -98,12 +98,12 @@ author : piki
 ```
 
 
-##option-disabled
+## option-disabled
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -121,12 +121,12 @@ author : piki
 ```
 
 
-##option-label
+## option-label
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -138,10 +138,10 @@ author : piki
   <option label="Cola">ColaColaColaCola</option>
 </select>
 <select name="drink2">
-  <optionlabel="Coffee" value="coffee">CoffeeCoffeeCoffeeCoffee</option>
-  <optionlabel="Water" value="water">WaterWaterWater</option>
-  <optionlabel="Tea" value="tea">TeaTeaTeaTea</option>
-  <optionlabel="Cola" value="cola">ColaColaColaCola</option>
+  <option label="Coffee" value="coffee">CoffeeCoffeeCoffeeCoffee</option>
+  <option label="Water" value="water">WaterWaterWater</option>
+  <option label="Tea" value="tea">TeaTeaTeaTea</option>
+  <option label="Cola" value="cola">ColaColaColaCola</option>
 </select>
  <input type="submit" value="Submit">
 </form>
@@ -149,12 +149,12 @@ author : piki
 </html>
 ```
 
-##option-selected
+## option-selected
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>

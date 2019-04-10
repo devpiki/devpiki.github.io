@@ -13,7 +13,7 @@ author : piki
 <!--marqueetest.html --> 
 <head>
     <title>marquee 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <marquee>문자를 스크롤로 움직이게 하는 태그 입니다.</marquee>

@@ -14,7 +14,7 @@ author : piki
 <!--chartest.html --> 
 <head>
     <title>특수문자 연습</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <p>&nbsp;</p>

@@ -13,7 +13,7 @@ author : piki
 <!--sectiontest.html --> 
 <head>
     <title>section 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <section>

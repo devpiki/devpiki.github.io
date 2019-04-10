@@ -14,7 +14,7 @@ author : piki
 <!--figuretest.html --> 
 <head>
     <title>figure 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <p>Pulpit Rock은 노르웨이의 Forsand 에있는 604m (1982ft)에 달하는 거대한 절벽입니다. 

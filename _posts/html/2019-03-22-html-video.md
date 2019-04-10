@@ -14,7 +14,7 @@ author : piki
 <!--videotest1.html --> 
 <head>
     <title>video 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <h1>기본 비디오 샘플</h1>
@@ -36,7 +36,7 @@ author : piki
 <!--videotest2.html --> 
 <head>
     <title>video 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <h1>옵션</h1>
@@ -58,7 +58,7 @@ author : piki
 <!--videotest3.html --> 
 <head>
     <title>video 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <h1>포스터</h1>
@@ -81,7 +81,7 @@ author : piki
 <!--videotest4.html --> 
 <head>
     <title>video 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <h1>source</h1>
@@ -102,7 +102,7 @@ author : piki
 <!--videotest5.html --> 
 <head>
     <title>video 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <h1>자막</h1>

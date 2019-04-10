@@ -12,7 +12,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8"/>
     <title>제목</title>
 </head>
 <body>
@@ -26,7 +26,7 @@ author : piki
 <html lang="ko">  
 <head>  
     <!-- base.html -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>문서 타이틀</title>
 </head> 
  <body>  
@@ -40,7 +40,7 @@ author : piki
 <html lang="ko">  
 <head>  
     <!-- base.html -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>문서 타이틀</title>
     <meta name="description" content="이 사이트는 기타 등등...">

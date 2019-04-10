@@ -13,7 +13,7 @@ author : piki
 <!--footertest.html --> 
 <head>
     <title>footer 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <footer>

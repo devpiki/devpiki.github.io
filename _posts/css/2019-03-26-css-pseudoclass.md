@@ -13,7 +13,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
 a:link { /*방문하지 않은 링크*/
   background-color: yellow;
@@ -43,7 +43,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
  input:focus{
   background-color: yellow;
@@ -63,7 +63,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   p {
     width: 200px;
@@ -88,7 +88,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   p:first-child {
     background-color: yellow;
@@ -114,7 +114,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   input:read-only{
     background-color: yellow;
@@ -143,7 +143,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
  input:required{
   background-color: yellow;
@@ -163,7 +163,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   /*:target {
     border: 2px solid red;
@@ -194,7 +194,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
  input:valid{
   background-color: yellow;
@@ -213,7 +213,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   input:checked {
     height: 30px;
@@ -235,7 +235,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   input[type=text]:enabled {
     background: #ffff00;
@@ -258,7 +258,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   p {
     color:red;
@@ -282,7 +282,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   tr:nth-child(2n-1) {
     background-color: yellow;
@@ -319,7 +319,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   p::first-letter {
     font-size: 150%;
@@ -344,7 +344,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   p::first-line {
     background-color: yellow;
@@ -363,7 +363,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
   p::before {
     content: "• ";
@@ -387,7 +387,7 @@ a:active { /*링크가 활성화(마우스 클릭뒤)*/
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <style>
  ::-webkit-input-placeholder { /* Edge */
     color: red;

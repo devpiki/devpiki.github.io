@@ -13,7 +13,7 @@ author : piki
 <!--articletest.html --> 
 <head>
     <title>article 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <article>

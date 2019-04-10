@@ -14,7 +14,7 @@ author : piki
 <!--audiotest1.html --> 
 <head>
     <title>audio 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <h1>기본 오디오 샘플</h1>
@@ -33,7 +33,7 @@ author : piki
 <!--audiotest2.html --> 
 <head>
     <title>audio 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <h1>옵션들</h1>

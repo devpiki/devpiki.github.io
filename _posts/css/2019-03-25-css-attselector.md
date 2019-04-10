@@ -13,7 +13,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   a[target] {
@@ -36,7 +36,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   a[target=_blank] {
@@ -64,7 +64,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   [title~=flower] {
@@ -86,7 +86,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   [lang|=en] {
@@ -111,7 +111,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   div[class^="test"] {
@@ -135,7 +135,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   div[class^="test"] {
@@ -159,7 +159,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   div[class*="test"] {

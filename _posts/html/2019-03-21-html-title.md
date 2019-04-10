@@ -13,7 +13,7 @@ author : piki
 <!--tagtest2.html --> 
 <head>
     <title>태그 연습</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <h1>h1 태그</h1>

@@ -47,7 +47,7 @@ author : piki
 <!DOCTYPE html>
 <html lang="ko">
 <head><title> CSS3 </title>
-<meta charset="utf-8">
+<meta charset="UTF-8"/>
 <style type="text/css">
 p { 
   width:140px; 

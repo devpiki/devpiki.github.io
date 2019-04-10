@@ -13,7 +13,7 @@ author : piki
 <!--headertest.html --> 
 <head>
     <title>header 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <header>

@@ -8,12 +8,12 @@ comments: true
 author : piki
 ---
 
-##textarea
+## textarea
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -27,12 +27,12 @@ textarea
 </html>
 ```
 
-##cols, rows, name
+## cols, rows, name
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -46,12 +46,12 @@ textarea
 </html>
 ```
 
-##disabled, readonly 
+## disabled, readonly 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -68,12 +68,12 @@ textarea
 </html>
 ```
 
-##maxlength
+## maxlength
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -85,12 +85,12 @@ textarea
 </html>
 ```
 
-##autofocus, placeholder, required
+## autofocus, placeholder, required
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>
@@ -102,12 +102,12 @@ textarea
 </html>
 ```
 
-##wrap
+## wrap
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
 </head>
 <body>

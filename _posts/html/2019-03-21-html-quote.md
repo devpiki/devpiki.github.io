@@ -13,7 +13,7 @@ author : piki
 <!--blocktest.html --> 
 <head>
     <title>인용문 태그</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <h1>q 태그</h1>

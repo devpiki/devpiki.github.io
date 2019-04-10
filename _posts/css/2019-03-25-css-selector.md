@@ -13,7 +13,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   p {
@@ -37,7 +37,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   #firstname {
@@ -61,7 +61,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   .red-ptag {
@@ -85,7 +85,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   * {
@@ -109,7 +109,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   div > p {
@@ -143,7 +143,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   div + p {
@@ -168,7 +168,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   p#more {
@@ -196,7 +196,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   div.more h2 {
@@ -227,7 +227,7 @@ author : piki
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>test</title>
   <style>
   h1, p {
