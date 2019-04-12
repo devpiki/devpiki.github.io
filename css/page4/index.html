@@ -141,45 +141,99 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
             "link, visited, hover, active&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=\"UTF-8\"/&gt;&lt;style&gt;a:link { /*방문하지 않은 링크*/  background-color: yellow;}a:visited { /*방문한 링크*/  backgro
         </p></li>
 
-</ul>
+</ul><!-- =============================Pagination links============================= -->
 
 
-<div class="pagination">
     
-    <a href="/css/page3/index.html"><i class="fa fa-backward" aria-hidden="true"></i></a>
     
 
     
     
-    <a href="/css/index.html">1</a>
     
-    
-    
-    <a href="/css/page2">2</a>
-    <!-- 페이지 번호를 나타내기 위한 코드. -->
-    
-    
-    
-    <a href="/css/page3">3</a>
-    <!-- 페이지 번호를 나타내기 위한 코드. -->
-    
-    
-    
-    <em>4</em>
-
-    
-    
-    
-    <a href="/css/page5">5</a>
-    <!-- 페이지 번호를 나타내기 위한 코드. -->
     
     
 
     
-    <a href="/css/page5/index.html"><i class="fa fa-forward" aria-hidden="true"></i></a>
-    
-</div>
 
+    
+
+    
+    
+    
+
+    
+    <ul class="pagination" role="navigation" aria-labelledby="pagination-label">
+
+        
+        <li class="previous">
+            
+            <a class="pagination-item" href="/css/page3/index.html" rel="prev"><i class="fa fa-backward" aria-hidden="true"></i></a>
+            
+        </li>
+        
+
+        
+        <li class="page first">
+            <a class="pagination-item" href="/css/"><span class="sr-only">page </span>1</a>
+        </li>
+        <li class="pages-indicator pages-indicator--offset-"><span aria-hidden="true">...</span><span class="sr-only">Skipped pages indicator</span></li>
+        
+
+        
+        
+        
+        
+        <li class="page offset-2">
+            
+            <a class="pagination-item" href="/css/page2/"><span class="sr-only">page </span>2</a>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        <li class="page offset-1">
+            
+            <a class="pagination-item" href="/css/page3/"><span class="sr-only">page </span>3</a>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        <li class="page offset-0 current-page">
+            
+            <span class="pagination-item"><span class="sr-only">current page</span><span aria-hidden="true">4</span></span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        <li class="pages-indicator pages-indicator--offset-"><span aria-hidden="true">...</span><span class="sr-only">Skipped pages indicator</span></li>
+        <li class="page last">
+            <a class="pagination-item" href="/css/page5/"><span class="sr-only">page </span>5</a>
+        </li>
+        
+
+        
+        <li class="next">
+            <a class="pagination-item" href="/css/page5/index.html" rel="next"><i class="fa fa-forward" aria-hidden="true"></i></a>
+        </li>
+        
+    </ul> 
+    
+    <!-- =============================//Pagination links============================= -->
   </div>
 
 </article>

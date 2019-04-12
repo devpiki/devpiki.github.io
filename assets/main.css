@@ -262,9 +262,8 @@ table {
         padding: 5px 10px;
         line-height: 1.5;
         text-align: right;
-        float: none; }
-        .site-nav .page-link:not(:last-child) {
-          margin-right: 0; } }
+        float: none;
+        margin-right: 0; } }
 
 /**
  * Site footer
@@ -406,7 +405,8 @@ table {
   border-bottom: 2px solid #999;
   outline: 0;
   color: #111;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-left: 20px; }
   .frm #search-box {
     box-sizing: border-box;
     border: 0;
@@ -427,17 +427,6 @@ table {
     display: block; }
     .frm #search-box {
       width: 100px; } }
-/*Paging*/
-.pagination {
-  text-align: center; }
-  .pagination a, .pagination em {
-    margin: 0 5px;
-    font: normal normal normal 17px/1 FontAwesome; }
-  .pagination em {
-    font-weight: 900; }
-  .pagination a {
-    color: #999; }
-
 .site-header-container {
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/img/main.jpg);
@@ -462,7 +451,8 @@ table {
 .PageNavigation {
   display: block;
   width: auto;
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  margin-bottom: 30px; }
   .PageNavigation a {
     display: block;
     margin: 15px;
@@ -621,3 +611,105 @@ table {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.pagination:before, .pagination:after {
+  content: " ";
+  display: table; }
+.pagination:after {
+  clear: both; }
+.pagination li {
+  display: none; }
+  .pagination li .pagination-item {
+    display: block;
+    speak-number: continuous; }
+.pagination .current-page,
+.pagination .previous,
+.pagination .next {
+  display: inline-block; }
+@media (min-width: 320px) {
+  .pagination .pages-indicator.pages-indicator--active {
+    display: inline-block; }
+  .pagination .first,
+  .pagination .last {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-2,
+  .pagination .pages-indicator--offset-3,
+  .pagination .pages-indicator--offset-4,
+  .pagination .pages-indicator--offset-5,
+  .pagination .pages-indicator--offset-6,
+  .pagination .pages-indicator--offset-7 {
+    display: inline-block; } }
+@media (min-width: 500px) {
+  .pagination .offset-1 {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-2 {
+    display: none; } }
+@media (min-width: 600px) {
+  .pagination .offset-2 {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-3 {
+    display: none; } }
+@media (min-width: 768px) {
+  .pagination .offset-3 {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-4 {
+    display: none; } }
+@media (min-width: 768px) {
+  .pagination .offset-4 {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-5 {
+    display: none; } }
+@media (min-width: 768px) {
+  .pagination .offset-5 {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-6 {
+    display: none; } }
+@media (min-width: 768px) {
+  .pagination .offset-6 {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-7 {
+    display: none; } }
+@media (min-width: 768px) {
+  .pagination .offset-7 {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-8 {
+    display: none; } }
+@media (min-width: 768px) {
+  .pagination .offset-8 {
+    display: inline-block; }
+  .pagination .pages-indicator--offset-9 {
+    display: none; } }
+
+.pagination {
+  padding: 0;
+  margin: 1em 0;
+  text-align: center; }
+  .pagination li {
+    margin: 0 0.2em;
+    padding: 0;
+    list-style: none; }
+    .pagination li.page .pagination-item {
+      text-decoration: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 36px;
+      line-height: 36px;
+      background: #eee;
+      color: #333;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05); }
+    .pagination li.page a:hover {
+      background: #ddd; }
+    .pagination li.page.current-page .pagination-item {
+      background: #1879CE;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+      color: white; }
