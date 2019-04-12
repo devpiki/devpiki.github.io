@@ -188,7 +188,7 @@ table {
 .site-header {
   /*border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;*/
-  min-height: 55px;
+  min-height: 54px;
   position: relative; }
 
 .site-title {
@@ -212,10 +212,20 @@ table {
     display: none; }
   .site-nav .page-link {
     color: #111;
-    line-height: 1.5; }
-    .site-nav .page-link:not(:last-child) {
-      margin-right: 20px; }
-  @media screen and (max-width: 600px) {
+    /*&:not(:last-child) {
+      margin-right: 20px;
+    }*/
+    display: inline-block;
+    padding: 0 13px;
+    float: left;
+    transition: background-color .5s, color .5s;
+    -moz-transition: background-color .5s, color .5s;
+    -webkit-transition: background-color .5s, color .5s;
+    -o-transition: background-color .5s, color .5s; }
+  .site-nav .page-link:hover {
+    background-color: #111;
+    color: white; }
+  @media screen and (max-width: 800px) {
     .site-nav {
       position: absolute;
       top: 9px;
@@ -250,7 +260,9 @@ table {
       .site-nav .page-link {
         display: block;
         padding: 5px 10px;
-        margin-left: 20px; }
+        line-height: 1.5;
+        text-align: right;
+        float: none; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
@@ -327,9 +339,9 @@ table {
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px; }
-  .post-list h3 {
+  .post-list h2 {
     margin: 0; }
-  .post-list h3 > a {
+  .post-list h2 > a {
     text-overflow: ellipsis;
     white-space: nowrap;
     word-wrap: normal;
@@ -337,7 +349,7 @@ table {
     font-size: 1.6rem;
     font-weight: 700;
     color: #151515; }
-  .post-list h3 > a:hover {
+  .post-list h2 > a:hover {
     color: #9a9a9a; }
   .post-list p {
     text-overflow: ellipsis;
@@ -408,7 +420,7 @@ table {
     background-color: #fff;
     color: #999; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .frm {
     margin: 0 10px;
     padding: 0;
@@ -444,20 +456,30 @@ table {
     height: 18em;
     padding: 0em !important; }
 
+@media screen and (max-width: 800px) {
+  .site-header-container {
+    z-index: -1; } }
 .PageNavigation {
   display: block;
   width: auto;
-  overflow: hidden;
   color: #4a4a4a; }
   .PageNavigation a {
     display: block;
-    width: 50%;
-    float: left;
-    margin: 1em 0; }
+    margin: 15px;
+    color: #828282; }
   .PageNavigation a:hover {
     color: #57A3E8; }
-  .PageNavigation .next {
-    text-align: right; }
+
+.search .search-link {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #151515; }
+.search .search-link:hover {
+  color: #9a9a9a; }
 
 /**
  * Syntax highlighting styles

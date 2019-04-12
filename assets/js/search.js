@@ -36,10 +36,10 @@
     }
 
     function createPostListingHTML(postItem) {
-        var headingHTML = "<h2><a  class='search-link' href='" + postItem.url + "''>" + postItem.title + "</a></h2>";
-        var metaHTML = "<div class='meta'>" + postItem.date + "</div>";
-        var descriptionHTML = "<p>" + postItem.content.substring(0, 150) + "...</p>";
-        return headingHTML + metaHTML + descriptionHTML;
+        var metaHTML = "<div class='post-meta'>" + postItem.date + "</div>";
+        var headingHTML = "<h2><a  class='post-link' href='" + postItem.url + "''>" + postItem.title + "</a></h2>";
+        var descriptionHTML = "<p>" + postItem.content.substring(0, 150) + "</p>";
+        return  '<li>' + metaHTML + headingHTML + descriptionHTML + '</li>';
     }
 
     function displaySearchResults(results, store) {
