@@ -69,6 +69,8 @@ pagination:
   limit: 0
   sort_field: "date"
   sort_reverse: true
+  page_amount : 7
+  root : /
 
 
 #tag_dir: tag/

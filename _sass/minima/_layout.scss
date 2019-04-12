@@ -110,9 +110,7 @@
       line-height: $base-line-height;
       text-align: right;
       float : none;
-      &:not(:last-child) {
-        margin-right: 0;
-      }
+      margin-right: 0;
     }
   }
 }
@@ -309,6 +307,7 @@
   outline: 0;
   color: #111;
   line-height: 1.5;
+  margin-left :20px;
   #search-box {
     box-sizing: border-box;
     border: 0;
@@ -336,20 +335,6 @@
   }
 }
 
-/*Paging*/
-.pagination {
-  text-align : center;
-  a, em {
-    margin: 0 5px;
-    font: normal normal normal 17px/1 FontAwesome;
-  }
-  em {
-    font-weight: 900;
-  }
-  a {
-    color : #999;
-  }
-}
 
 .site-header-container {
     color: #fff;
@@ -384,6 +369,7 @@
   display: block;
   width: auto;
   color : #4a4a4a;
+  margin-bottom: 30px;
   a {
     display: block;
     margin: 15px;
