@@ -321,6 +321,34 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h2 id="가로와-세로를-지정">가로와 세로를 지정</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+  <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+    <span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">orientation</span><span class="p">:</span><span class="nb">landscape</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">#one</span> <span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="no">red</span><span class="p">;</span><span class="nl">border</span><span class="p">:</span><span class="m">2px</span> <span class="nb">solid</span> <span class="no">red</span><span class="p">;}</span>
+      <span class="nf">#two</span> <span class="p">{</span><span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;}</span>
+    <span class="p">}</span>
+    <span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">orientation</span><span class="p">:</span><span class="nb">portrait</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">#one</span> <span class="p">{</span><span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;}</span>
+      <span class="nf">#two</span> <span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="no">green</span><span class="p">;</span><span class="nl">border</span><span class="p">:</span><span class="m">2px</span> <span class="nb">solid</span> <span class="no">green</span><span class="p">;}</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"one"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>landscape - 가로로 긴 레이아웃<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"two"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>portrait - 세로로 긴 레이아웃<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
   </div>
 
   <div class="PageNavigation">
