@@ -240,3 +240,32 @@ body {
 </body>
 </html>
 ```
+
+## 가로와 세로를 지정
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <style type="text/css">
+    @media screen and (orientation:landscape) {
+      #one {color:red;border:2px solid red;}
+      #two {display: none;}
+    }
+    @media screen and (orientation:portrait) {
+      #one {display: none;}
+      #two {color:green;border:2px solid green;}
+    }
+  </style>
+</head>
+<body>
+  <div id="one">
+    <h1>landscape - 가로로 긴 레이아웃</h1>
+  </div>
+  <div id="two">
+    <h1>portrait - 세로로 긴 레이아웃</h1>
+  </div>
+</body>
+</html>
+```
