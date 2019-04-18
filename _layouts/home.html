@@ -21,7 +21,7 @@ layout: default
                 </a>
             </h2>
             <p>
-                {{ post.content | strip_html | strip_newlines | jsonify | slice:0,200}}
+                {{ post.content | strip_html | strip_newlines | jsonify | slice:0,200 | remove_first:'"' }}
             </p>
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             {%- if site.show_excerpts -%}

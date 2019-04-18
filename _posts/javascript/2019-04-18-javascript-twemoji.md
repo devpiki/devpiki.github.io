@@ -2,7 +2,7 @@
 layout: post
 title: "Twemoji (Twitter Emoji)"
 date: 2019-04-18 13:50:19 +0900
-categories: [web]
+categories: [web, javascript]
 tags: [javascript, twitter, emojis]
 comments: true
 author : piki

@@ -298,6 +298,18 @@
     margin-bottom : 13px;
   }
 }
+.e-content {
+  a {
+      color: #0600ff;
+      text-decoration: underline;
+      &::before {
+        content : '[';
+      }
+      &::after {
+        content : ']';
+      }
+  }
+}
 
 /*search form*/
 .frm {

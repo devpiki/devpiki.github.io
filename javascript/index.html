@@ -16,7 +16,7 @@ pagination:
             </a>
         </h2>
         <p>
-            {{ post.content | strip_html | strip_newlines | jsonify | slice:0,200}}
+            {{ post.content | strip_html | strip_newlines | jsonify | slice:0,200 | remove_first:'"'}}
         </p>
         {%- if site.show_excerpts -%}
         {{ post.excerpt }}
