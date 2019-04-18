@@ -16,15 +16,15 @@
 <meta property="og:title" content="Twemoji (Twitter Emoji)" />
 <meta name="author" content="piki" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="https://twemoji.twitter.com/ https://github.com/twitter/twemoji 트위터 오픈 소스 이모티콘 사용 방법 - 태크 입력" />
-<meta property="og:description" content="https://twemoji.twitter.com/ https://github.com/twitter/twemoji 트위터 오픈 소스 이모티콘 사용 방법 - 태크 입력" />
-<link rel="canonical" href="https://devpiki.github.io/web/2019/04/18/javascript-twemoji.html" />
-<meta property="og:url" content="https://devpiki.github.io/web/2019/04/18/javascript-twemoji.html" />
+<meta name="description" content="https://twemoji.twitter.com/ https://github.com/twitter/twemoji 트위터 오픈 소스 이모티콘 사용 방법 - 태그 입력" />
+<meta property="og:description" content="https://twemoji.twitter.com/ https://github.com/twitter/twemoji 트위터 오픈 소스 이모티콘 사용 방법 - 태그 입력" />
+<link rel="canonical" href="https://devpiki.github.io/web/javascript/2019/04/18/javascript-twemoji.html" />
+<meta property="og:url" content="https://devpiki.github.io/web/javascript/2019/04/18/javascript-twemoji.html" />
 <meta property="og:site_name" content="Piki’s blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-04-18T13:50:19+09:00" />
 <script type="application/ld+json">
-{"url":"https://devpiki.github.io/web/2019/04/18/javascript-twemoji.html","author":{"@type":"Person","name":"piki"},"headline":"Twemoji (Twitter Emoji)","description":"https://twemoji.twitter.com/ https://github.com/twitter/twemoji 트위터 오픈 소스 이모티콘 사용 방법 - 태크 입력","datePublished":"2019-04-18T13:50:19+09:00","dateModified":"2019-04-18T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/web/2019/04/18/javascript-twemoji.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://devpiki.github.io/web/javascript/2019/04/18/javascript-twemoji.html","author":{"@type":"Person","name":"piki"},"headline":"Twemoji (Twitter Emoji)","description":"https://twemoji.twitter.com/ https://github.com/twitter/twemoji 트위터 오픈 소스 이모티콘 사용 방법 - 태그 입력","datePublished":"2019-04-18T13:50:19+09:00","dateModified":"2019-04-18T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/web/javascript/2019/04/18/javascript-twemoji.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Font Awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -60,7 +60,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         </label>
 
         <div class="trigger">
-          <!--<a class="page-link" href="/about/">About</a><a class="page-link" href="/category/css/">css</a><a class="page-link" href="/category/html/">html</a><a class="page-link" href="/category/web/">web</a><a class="page-link" href="/javascript/index.html">Javascript</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a>-->
+          <!--<a class="page-link" href="/about/">About</a><a class="page-link" href="/category/css/">css</a><a class="page-link" href="/category/html/">html</a><a class="page-link" href="/category/javascript/">javascript</a><a class="page-link" href="/category/web/">web</a><a class="page-link" href="/javascript/index.html">Javascript</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/index.html">Piki&#39;s blog</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/html/index.html">HTML</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/css/index.html">CSS</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a><a class="page-link" href="/web/index.html">Web</a>-->
           <a class="page-link" href="/about/">About</a>
           <a class="page-link" href="/html/">HTML</a>
           <a class="page-link" href="/css/">CSS</a>
@@ -96,7 +96,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   <li><a href="https://twemoji.twitter.com/">https://twemoji.twitter.com/</a></li>
   <li><a href="https://github.com/twitter/twemoji">https://github.com/twitter/twemoji</a></li>
   <li>트위터 오픈 소스 이모티콘</li>
-  <li>사용 방법 - 태크 입력</li>
+  <li>사용 방법 - 태그 입력</li>
 </ul>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
@@ -161,7 +161,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 
   <div class="PageNavigation">
     
-      <a class="prev" href="/css/web/2019/04/04/css-mediaquerylayout.html"><strong>[이전글]</strong> Mediaquery Layout</a>
+      <a class="prev" href="/web/javascript/2019/04/18/javascript-singleton.html"><strong>[이전글]</strong> Singleton Pattern</a>
     
     
   </div>
@@ -185,7 +185,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a></noscript><a class="u-url" href="/web/2019/04/18/javascript-twemoji.html" hidden></a>
+    Disqus.</a></noscript><a class="u-url" href="/web/javascript/2019/04/18/javascript-twemoji.html" hidden></a>
 </article>
 
       </div>

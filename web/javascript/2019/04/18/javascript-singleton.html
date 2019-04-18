@@ -11,20 +11,20 @@
 
 
   <meta name="google-site-verification" content="9Ef5Uaca8SZOaY49wItpEK354fWLKam8NqWqoNzuSTs" /><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>인용문 - q, blockquote | Piki’s blog</title>
+<title>Singleton Pattern | Piki’s blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="인용문 - q, blockquote" />
+<meta property="og:title" content="Singleton Pattern" />
 <meta name="author" content="piki" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="&lt;html lang=&quot;ko&quot;&gt; &lt;!--blocktest.html --&gt; &lt;head&gt; &lt;title&gt;인용문 태그&lt;/title&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;q 태그&lt;/h1&gt; &lt;p&gt;p 태그 안의 q 태그 &lt;q&gt;q 태그는 문단 안에서 인용 할 때 사용 합니다.&lt;/q&gt; 를 사용 하였습니다. &lt;/p&gt; &lt;h1&gt;blockquote 태그&lt;/h1&gt; &lt;p&gt;blockquote 태그란 :&lt;/p&gt; &lt;blockquote&gt; blockquote 태그는 새로운 문단에서 인용 할때 사용 합니다. &lt;/blockquote&gt; &lt;p&gt;blockquote 태그 사용 :&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt; blockquote 태그안에 별도 단락 태그로 묶을수도 있습니다. &lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;blockquote 태그 속성값 cite :&lt;/p&gt; &lt;blockquote cite=&quot;https://www.w3schools.com/tags/tag_blockquote.asp&quot;&gt; cite 속성은 인용문의 출처를 표시 합니다. 화면에 별도 표시되지는 않지만 검색엔진이 이 주소 정보를 사용할 수 있습니다. &lt;/blockquote&gt; &lt;/body&gt; &lt;/html&gt; 결과" />
-<meta property="og:description" content="&lt;html lang=&quot;ko&quot;&gt; &lt;!--blocktest.html --&gt; &lt;head&gt; &lt;title&gt;인용문 태그&lt;/title&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;q 태그&lt;/h1&gt; &lt;p&gt;p 태그 안의 q 태그 &lt;q&gt;q 태그는 문단 안에서 인용 할 때 사용 합니다.&lt;/q&gt; 를 사용 하였습니다. &lt;/p&gt; &lt;h1&gt;blockquote 태그&lt;/h1&gt; &lt;p&gt;blockquote 태그란 :&lt;/p&gt; &lt;blockquote&gt; blockquote 태그는 새로운 문단에서 인용 할때 사용 합니다. &lt;/blockquote&gt; &lt;p&gt;blockquote 태그 사용 :&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt; blockquote 태그안에 별도 단락 태그로 묶을수도 있습니다. &lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;blockquote 태그 속성값 cite :&lt;/p&gt; &lt;blockquote cite=&quot;https://www.w3schools.com/tags/tag_blockquote.asp&quot;&gt; cite 속성은 인용문의 출처를 표시 합니다. 화면에 별도 표시되지는 않지만 검색엔진이 이 주소 정보를 사용할 수 있습니다. &lt;/blockquote&gt; &lt;/body&gt; &lt;/html&gt; 결과" />
-<link rel="canonical" href="https://devpiki.github.io/html/web/2019/03/12/html-quote.html" />
-<meta property="og:url" content="https://devpiki.github.io/html/web/2019/03/12/html-quote.html" />
+<meta name="description" content="싱글톤 패턴 생성자가 여러 차례 호출되더라도 실제로 생성되는 객체는 하나이고 최초 생성 이후에 호출된 생성자는 최초의 생성자가 생성한 객체를 리턴. 위키 특정 클래스의 객체 인스턴스를 하나만 만들도록 함 예시 참조소스" />
+<meta property="og:description" content="싱글톤 패턴 생성자가 여러 차례 호출되더라도 실제로 생성되는 객체는 하나이고 최초 생성 이후에 호출된 생성자는 최초의 생성자가 생성한 객체를 리턴. 위키 특정 클래스의 객체 인스턴스를 하나만 만들도록 함 예시 참조소스" />
+<link rel="canonical" href="https://devpiki.github.io/web/javascript/2019/04/18/javascript-singleton.html" />
+<meta property="og:url" content="https://devpiki.github.io/web/javascript/2019/04/18/javascript-singleton.html" />
 <meta property="og:site_name" content="Piki’s blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-03-12T13:50:19+09:00" />
+<meta property="article:published_time" content="2019-04-18T13:50:19+09:00" />
 <script type="application/ld+json">
-{"url":"https://devpiki.github.io/html/web/2019/03/12/html-quote.html","author":{"@type":"Person","name":"piki"},"headline":"인용문 - q, blockquote","description":"&lt;html lang=&quot;ko&quot;&gt; &lt;!--blocktest.html --&gt; &lt;head&gt; &lt;title&gt;인용문 태그&lt;/title&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;q 태그&lt;/h1&gt; &lt;p&gt;p 태그 안의 q 태그 &lt;q&gt;q 태그는 문단 안에서 인용 할 때 사용 합니다.&lt;/q&gt; 를 사용 하였습니다. &lt;/p&gt; &lt;h1&gt;blockquote 태그&lt;/h1&gt; &lt;p&gt;blockquote 태그란 :&lt;/p&gt; &lt;blockquote&gt; blockquote 태그는 새로운 문단에서 인용 할때 사용 합니다. &lt;/blockquote&gt; &lt;p&gt;blockquote 태그 사용 :&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt; blockquote 태그안에 별도 단락 태그로 묶을수도 있습니다. &lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;blockquote 태그 속성값 cite :&lt;/p&gt; &lt;blockquote cite=&quot;https://www.w3schools.com/tags/tag_blockquote.asp&quot;&gt; cite 속성은 인용문의 출처를 표시 합니다. 화면에 별도 표시되지는 않지만 검색엔진이 이 주소 정보를 사용할 수 있습니다. &lt;/blockquote&gt; &lt;/body&gt; &lt;/html&gt; 결과","datePublished":"2019-03-12T13:50:19+09:00","dateModified":"2019-03-12T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/html/web/2019/03/12/html-quote.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://devpiki.github.io/web/javascript/2019/04/18/javascript-singleton.html","author":{"@type":"Person","name":"piki"},"headline":"Singleton Pattern","description":"싱글톤 패턴 생성자가 여러 차례 호출되더라도 실제로 생성되는 객체는 하나이고 최초 생성 이후에 호출된 생성자는 최초의 생성자가 생성한 객체를 리턴. 위키 특정 클래스의 객체 인스턴스를 하나만 만들도록 함 예시 참조소스","datePublished":"2019-04-18T13:50:19+09:00","dateModified":"2019-04-18T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/web/javascript/2019/04/18/javascript-singleton.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Font Awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -85,56 +85,86 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-  <h1 class="post-title p-name" itemprop="name headline">인용문 - q, blockquote</h1>
+  <h1 class="post-title p-name" itemprop="name headline">Singleton Pattern</h1>
   <p class="post-meta">
-    <time class="dt-published" datetime="2019-03-12T13:50:19+09:00" itemprop="datePublished">Mar 12, 2019
+    <time class="dt-published" datetime="2019-04-18T13:50:19+09:00" itemprop="datePublished">Apr 18, 2019
     </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">piki</span></span></p>
 </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!--blocktest.html --&gt;</span> 
+    <ul>
+  <li>싱글톤 패턴
+    <ul>
+      <li>생성자가 여러 차례 호출되더라도 실제로 생성되는 객체는 하나이고 최초 생성 이후에 호출된 생성자는 최초의 생성자가 생성한 객체를 리턴. <a href="https://ko.wikipedia.org/wiki/%EC%8B%B1%EA%B8%80%ED%84%B4_%ED%8C%A8%ED%84%B4">위키</a></li>
+      <li>특정 클래스의 객체 인스턴스를 하나만 만들도록 함</li>
+    </ul>
+  </li>
+  <li>예시 <a href="https://codepen.io/JoeCoulam/pen/mRqbzz">참조소스</a></li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span>인용문 태그<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>Page Title<span class="nt">&lt;/title&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>q 태그<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;p&gt;</span>p 태그 안의 q 태그
-        <span class="nt">&lt;q&gt;</span>q 태그는 문단 안에서 인용 할 때 사용 합니다.<span class="nt">&lt;/q&gt;</span>
-        를 사용 하였습니다.
-    <span class="nt">&lt;/p&gt;</span>
-    
-    
-    <span class="nt">&lt;h1&gt;</span>blockquote 태그<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;p&gt;</span>blockquote 태그란 :<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;blockquote&gt;</span>
-        blockquote 태그는 새로운 문단에서 인용 할때 사용 합니다.
-    <span class="nt">&lt;/blockquote&gt;</span>
-    <span class="nt">&lt;p&gt;</span>blockquote 태그 사용 :<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;blockquote&gt;</span>
-        <span class="nt">&lt;p&gt;</span>
-        blockquote 태그안에 별도 단락 태그로 묶을수도 있습니다.
-        <span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/blockquote&gt;</span>
-    <span class="nt">&lt;p&gt;</span>blockquote 태그 속성값 cite :<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;blockquote</span> <span class="na">cite=</span><span class="s">"https://www.w3schools.com/tags/tag_blockquote.asp"</span><span class="nt">&gt;</span>
-        cite 속성은 인용문의 출처를 표시 합니다.
-        화면에 별도 표시되지는 않지만 검색엔진이 이 주소 정보를 사용할 수 있습니다.
-    <span class="nt">&lt;/blockquote&gt;</span>
+
+<span class="nt">&lt;h1&gt;</span>Creating a singleton Class in ES6<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"txt"</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">let</span> <span class="nx">txt</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'txt'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">sInstance</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nx">SingletonExample</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">sInstance</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">sInstance</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+      <span class="nx">txt</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">"Singleton Class Created!"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">txt</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s2">"&lt;br&gt;Whoopsie, you're only allowed one instance of this Class!"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">sInstance</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">singletonExample</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SingletonExample</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">singletonExample2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SingletonExample</span><span class="p">();</span>
+
+<span class="c1">//test</span>
+<span class="nx">txt</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s1">'&lt;br&gt;'</span> <span class="o">+</span> <span class="p">(</span><span class="nx">singletonExample</span> <span class="o">===</span> <span class="nx">singletonExample2</span><span class="p">);</span>
+<span class="nx">txt</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s1">'&lt;br&gt;'</span> <span class="o">+</span> <span class="p">(</span><span class="nx">singletonExample</span> <span class="o">===</span> <span class="nx">sInstance</span><span class="p">);</span>
+<span class="nx">txt</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s1">'&lt;br&gt;'</span> <span class="o">+</span> <span class="p">(</span><span class="nx">singletonExample2</span> <span class="o">===</span> <span class="nx">sInstance</span><span class="p">);</span>
+<span class="nx">singletonExample</span><span class="p">[</span><span class="s1">'test123'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'dfdfdf'</span><span class="p">;</span>
+<span class="nx">txt</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s1">'&lt;br&gt;'</span> <span class="o">+</span> <span class="p">(</span><span class="nx">singletonExample2</span><span class="p">[</span><span class="s1">'test123'</span><span class="p">]);</span>
+<span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
-<p><strong><a href="/assets/sample/html/blocktest.html">결과</a></strong></p>
+
+<ul>
+  <li>Angular 는 싱글톤 패턴의 대표적인 프레임워크
+    <ul>
+      <li>https://angular.io/guide/singleton-services</li>
+    </ul>
+  </li>
+  <li>싱글톤은 인스턴스가 필요 할때 계속 만들어 내는것이 아닌 기존의 인스턴스를 사용 하는 형태임
+    <ul>
+      <li>메모리 낭비를 줄일수 있다</li>
+      <li>두번째 객체의 로딩 시간도 줄일 수 있다.</li>
+    </ul>
+  </li>
+</ul>
+
 
   </div>
 
   <div class="PageNavigation">
     
-      <a class="prev" href="/html/web/2019/03/12/html-p.html"><strong>[이전글]</strong> p 태그</a>
+      <a class="prev" href="/css/web/2019/04/04/css-mediaquerylayout.html"><strong>[이전글]</strong> Mediaquery Layout</a>
     
     
-      <a class="next" href="/html/web/2019/03/12/html-section.html"><strong>[다음글]</strong> section 태그</a>
+      <a class="next" href="/web/javascript/2019/04/18/javascript-twemoji.html"><strong>[다음글]</strong> Twemoji (Twitter Emoji)</a>
     
   </div>
 <div id="disqus_thread"></div>
@@ -157,7 +187,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a></noscript><a class="u-url" href="/html/web/2019/03/12/html-quote.html" hidden></a>
+    Disqus.</a></noscript><a class="u-url" href="/web/javascript/2019/04/18/javascript-singleton.html" hidden></a>
 </article>
 
       </div>

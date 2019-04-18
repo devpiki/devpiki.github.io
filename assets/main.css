@@ -398,6 +398,14 @@ table {
   .post-content hr {
     margin-bottom: 13px; }
 
+.e-content a {
+  color: #0600ff;
+  text-decoration: underline; }
+  .e-content a::before {
+    content: '['; }
+  .e-content a::after {
+    content: ']'; }
+
 /*search form*/
 .frm {
   display: inline-block;
