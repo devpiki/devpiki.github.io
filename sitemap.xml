@@ -241,6 +241,10 @@
 <lastmod>2019-04-04T09:50:19+09:00</lastmod>
 </url>
 <url>
+<loc>https://devpiki.github.io/web/2019/04/18/javascript-twemoji.html</loc>
+<lastmod>2019-04-18T13:50:19+09:00</lastmod>
+</url>
+<url>
 <loc>https://devpiki.github.io/about/</loc>
 </url>
 <url>
@@ -293,6 +297,9 @@
 </url>
 <url>
 <loc>https://devpiki.github.io/page12/</loc>
+</url>
+<url>
+<loc>https://devpiki.github.io/page13/</loc>
 </url>
 <url>
 <loc>https://devpiki.github.io/html/</loc>
@@ -365,6 +372,9 @@
 </url>
 <url>
 <loc>https://devpiki.github.io/web/page12/</loc>
+</url>
+<url>
+<loc>https://devpiki.github.io/web/page13/</loc>
 </url>
 <url>
 <loc>https://devpiki.github.io/assets/sample/css/font_test.html</loc>
@@ -493,5 +503,9 @@
 <url>
 <loc>https://devpiki.github.io/assets/sample/html/videotest5.html</loc>
 <lastmod>2019-03-25T09:13:34+09:00</lastmod>
+</url>
+<url>
+<loc>https://devpiki.github.io/assets/sample/javascript/twemoji.html</loc>
+<lastmod>2019-04-18T15:34:33+09:00</lastmod>
 </url>
 </urlset>
