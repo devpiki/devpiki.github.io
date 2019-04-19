@@ -29,7 +29,7 @@
 
   <!-- Google Fonts -->
   
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Nanum+Gothic" rel="stylesheet">
   
 
   <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://devpiki.github.io/feed.xml" title="Piki's blog" /><script>
@@ -64,7 +64,13 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
           <a class="page-link" href="/css/">CSS</a>
           <a class="page-link" href="/javascript/">Javascript</a>
           <a class="page-link" href="/web/">Web</a>
-
+          <script type="text/javascript">
+            var a = location.pathname;
+            a = '/' + a.split('/')[1] + '/';
+            if(document.querySelector('nav a.page-link[href="'+a+'"]')){
+              document.querySelector('nav a.page-link[href="'+a+'"]').classList.add('active');              
+            }            
+          </script>
           <!-- Search bar -->
           
             <form class="frm"  action="/search.html" method="get">
