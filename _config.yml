@@ -25,7 +25,7 @@ twitter_username: dev_piki
 github_username: devpiki
 facebook_username: dev.piko
 encoding: 'utf-8'
-google_fonts: "Nanum+Gothic:400,700"
+google_fonts: "IBM+Plex+Mono|Nanum+Gothic"
 search: true # Enable the search feature
 lang: 'ko'
 author: Piki
