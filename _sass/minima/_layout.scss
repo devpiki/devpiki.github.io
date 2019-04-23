@@ -54,21 +54,48 @@
     color: $text-color;
 
     display : inline-block;
-    padding: 0 13px;
+    margin: 0 13px;
     float : left;
+    max-height: 54px;
+    position: relative;
 
-    transition:background-color .5s;
-    -moz-transition:background-color .5s;
-    -webkit-transition:background-color .5s;
-    -o-transition:background-color .5s;
-
-    &:not(.active):hover {
-      background-color : #eee;
+    div{
+      background-color: #1879CE;
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left:0;
+      transition:width .5s;
+      -moz-transition:width .5s;
+      -webkit-transition:width .5s;
+      -o-transition:width .5s;
     }
-  }
-  .active {
-    background-color : $text-color;
-    color : white;
+    &:not(.active):hover{
+      color : #1879CE;
+      div {
+        width : 100%;
+      }
+    }
+    &:not(.active):not(:hover) {
+      div {
+        width : 0%;
+        transition: none; 
+        -moz-transition: none; 
+        -webkit-transition: none; 
+        -o-transition: none; 
+      }
+    }
+    &.active{
+      color : #1879CE;
+      div {
+        width : 100%; 
+      transition: none; 
+      -moz-transition: none; 
+      -webkit-transition: none; 
+      -o-transition: none; 
+      }
+    }
   }
 
   @include media-query($on-laptop) {
@@ -120,6 +147,10 @@
       text-align: right;
       float : none;
       margin-right: 0;
+      
+      div{
+        display:none;
+      }
     }
   }
 }
