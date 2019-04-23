@@ -7,7 +7,7 @@
   <meta property="og:url" content="https://devpiki.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Piki's blog">
-  <meta property="og:description" content="html5, css3, javascript">
+  <meta property="og:description" content="html5, css3, javascript, html, css, web">
 
 
   <meta name="google-site-verification" content="9Ef5Uaca8SZOaY49wItpEK354fWLKam8NqWqoNzuSTs" /><!-- Begin Jekyll SEO tag v2.5.0 -->
@@ -45,9 +45,9 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </script>
   
 </head>
-<body><header class="site-header" role="banner">
+<body><header class="site-header white" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/"><i class="fa fa-file-code-o fa-2" aria-hidden="true"></i>Piki&#39;s blog</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><i class="fa fa-file-code-o fa-2" aria-hidden="true"></i><!-- Piki&#39;s blog --></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -83,6 +83,24 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         </div>
       </nav></div>
 </header>
+<!-- <script>
+  window.addEventListener('scroll', function(e){
+    var doc = document.documentElement;
+    var a = document.querySelector('.site-header[role=banner]');
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+    if(top < 290){
+      if(a.classList.contains('black')){
+        a.classList.remove('black');
+        a.classList.add('white');
+      }      
+    }else{
+      if(a.classList.contains('white')){
+        a.classList.remove('white');
+        a.classList.add('black');  
+      }
+    }
+  });
+</script> -->
 
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -107,6 +125,28 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 
 <script>
     window.store = {
+    
+    "web-javascript-2019-04-22-javascript-observer-html": {
+        "title": "Observer Pattern",
+            "tags": "javascript, pattern, observer",
+            "date": "April 22, 2019",
+            "author": "piki",
+            "categories": "web, javascript",
+            "content": "  옵저버 패턴          객체의 상태 변화를 관찰하는 관찰자들, 즉 옵저버들의 목록을 각각의 객체에 등록 시키고 각 객체들의 상태가 변화 할때 마다 객체가 직접 옵저버에게 통지 하도록 하는 디자인 패턴. 위키        예시 참조소스&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;input type=\"text\" class=\"js-input\" placeholder=\"type something here\" style=\"margin-bottom:20px;\" /&gt;&lt;div&gt;\t&lt;button class=\"js-subscribe-p1\"&gt;Subscribe&lt;/button&gt;  \t&lt;button class=\"js-unsubscribe-p1\"&gt;Unsubscribe&lt;/button&gt;    &lt;div&gt;    \tP1:&lt;span class=\"js-p1\"&gt;&lt;/span&gt;    &lt;/div&gt;&lt;/div&gt;&lt;div&gt;  &lt;button class=\"js-subscribe-p2\"&gt;Subscribe&lt;/button&gt;  &lt;button class=\"js-unsubscribe-p2\"&gt;Unsubscribe&lt;/button&gt;  &lt;div&gt;    \tP2:&lt;span class=\"js-p2\"&gt;&lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;&lt;div&gt;  &lt;button class=\"js-subscribe-p3\"&gt;Subscribe&lt;/button&gt;  &lt;button class=\"js-unsubscribe-p3\"&gt;Unsubscribe&lt;/button&gt;  &lt;div&gt;    \tP3:&lt;span class=\"js-p3\"&gt;&lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;&lt;script&gt;class Observable {  constructor() {    this.observers = [];  }  subscribe(f) {    this.observers.push(f);  }  unsubscribe(f) {    this.observers = this.observers.filter(subscriber =&gt; subscriber !== f);  }  notify(data) {    this.observers.forEach(observer =&gt; observer(data));  }}const input = document.querySelector('.js-input');const ps = document.querySelectorAll('span[class*=js-p]');const subscribePs = document.querySelectorAll('[class*=js-subscribe-p]');const unsubscribePs = document.querySelectorAll('[class*=js-unsubscribe-p]');const updateP1 = text =&gt; ps[0].textContent = text;const updateP2 = text =&gt; ps[1].textContent = text;const updateP3 = text =&gt; ps[2].textContent = text;const headingsObserver = new Observable();headingsObserver.subscribe(updateP1);headingsObserver.subscribe(updateP2);headingsObserver.subscribe(updateP3);subscribePs[0].addEventListener('click', () =&gt; headingsObserver.subscribe(updateP1));unsubscribePs[0].addEventListener('click', () =&gt; headingsObserver.unsubscribe(updateP1));subscribePs[1].addEventListener('click', () =&gt; headingsObserver.subscribe(updateP2));unsubscribePs[1].addEventListener('click', () =&gt; headingsObserver.unsubscribe(updateP2));subscribePs[2].addEventListener('click', () =&gt; headingsObserver.subscribe(updateP3));unsubscribePs[2].addEventListener('click', () =&gt; headingsObserver.unsubscribe(updateP3));input.addEventListener('keyup', e =&gt; {  headingsObserver.notify(e.target.value);});&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;  Vue.js 에서는 옵저버 패턴을 이용하여 속성에 액세스 하거나 수정할 때 종속성 추적 및 변경 알림을 수행할 수 있다고 한다.          https://vuejs.org/v2/guide/reactivity.html        장점          Subject 클래스와 Observer 클래스는 서로 독립적이므로 각각 독립적으로 재사용이 가능      Subject 클래스와 Observer 클래스간의 결합도가 낮다      참조      ",
+        "url": "/web/javascript/2019/04/22/javascript-observer.html"
+    }
+    ,
+    
+    "web-javascript-2019-04-22-javascript-facade-html": {
+        "title": "Facade Pattern",
+            "tags": "javascript, pattern, facade",
+            "date": "April 22, 2019",
+            "author": "piki",
+            "categories": "web, javascript",
+            "content": "  퍼사드 패턴          Facade(외관) 는 “건물의 정면”을 의미      퍼사드는 다른 커다란 코드 부분에 대한 간략화된 인터페이스를 제공하는 객체      위키        예시 참조소스&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;button onclick=\"run()\"&gt;click&lt;/button&gt;&lt;script&gt;var Mortgage = function(name) {    this.name = name;}Mortgage.prototype = {    applyFor: function(amount) {        // access multiple subsystems...        var result = \"approved\";        if (!new Bank().verify(this.name, amount)) {            result = \"denied\";        } else if (!new Credit().get(this.name)) {            result = \"denied\";        } else if (!new Background().check(this.name)) {            result = \"denied\";        }        return this.name + \" has been \" + result +               \" for a \" + amount + \" mortgage\";    }}var Bank = function() {    this.verify = function(name, amount) {        // complex logic ...        return true;    }}var Credit = function() {    this.get = function(name) {        // complex logic ...        return true;    }}var Background = function() {    this.check = function(name) {        // complex logic ...        return true;    }}function run() {    var mortgage = new Mortgage(\"Joan Templeton\");    var result = mortgage.applyFor(\"$100,000\");     alert(result);}&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;  복잡한 서브 시스템에 접근 할 수 있는 간단한 인터페이스를 제공 하고 싶을때 사용  사용자가 알아야 하는 서브 시스템의 범위를 줄여줌  사용자가 원할 때는 서브 시스템에 직접 접근 하여 내부 클래스를 사용 할 수 있다.  참조",
+        "url": "/web/javascript/2019/04/22/javascript-facade.html"
+    }
+    ,
     
     "web-javascript-2019-04-18-javascript-twemoji-html": {
         "title": "Twemoji (Twitter Emoji)",

@@ -11,20 +11,20 @@
 
 
   <meta name="google-site-verification" content="9Ef5Uaca8SZOaY49wItpEK354fWLKam8NqWqoNzuSTs" /><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>목록 태그 - ol | Piki’s blog</title>
+<title>Facade Pattern | Piki’s blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="목록 태그 - ol" />
+<meta property="og:title" content="Facade Pattern" />
 <meta name="author" content="piki" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="&lt;html lang=&quot;ko&quot;&gt; &lt;!--oltest.html --&gt; &lt;head&gt; &lt;title&gt;ol 태그&lt;/title&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;ol 태그 &lt;/h1&gt; &lt;ol&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;시작번호 지정 : start &lt;/h1&gt; &lt;ol start=&quot;50&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;특정 목록의 번호 지정 : value &lt;/h1&gt; &lt;ol start=&quot;50&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li value=&quot;60&quot;&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;type 지정 : 1 | A | a | I | i &lt;/h1&gt; &lt;ol type=&quot;1&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;A&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;a&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;I&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;i&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;/body&gt; &lt;/html&gt; 결과" />
-<meta property="og:description" content="&lt;html lang=&quot;ko&quot;&gt; &lt;!--oltest.html --&gt; &lt;head&gt; &lt;title&gt;ol 태그&lt;/title&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;ol 태그 &lt;/h1&gt; &lt;ol&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;시작번호 지정 : start &lt;/h1&gt; &lt;ol start=&quot;50&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;특정 목록의 번호 지정 : value &lt;/h1&gt; &lt;ol start=&quot;50&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li value=&quot;60&quot;&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;type 지정 : 1 | A | a | I | i &lt;/h1&gt; &lt;ol type=&quot;1&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;A&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;a&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;I&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;i&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;/body&gt; &lt;/html&gt; 결과" />
-<link rel="canonical" href="https://devpiki.github.io/html/web/2019/03/12/html-ol.html" />
-<meta property="og:url" content="https://devpiki.github.io/html/web/2019/03/12/html-ol.html" />
+<meta name="description" content="퍼사드 패턴 Facade(외관) 는 “건물의 정면”을 의미 퍼사드는 다른 커다란 코드 부분에 대한 간략화된 인터페이스를 제공하는 객체 위키 예시 참조소스" />
+<meta property="og:description" content="퍼사드 패턴 Facade(외관) 는 “건물의 정면”을 의미 퍼사드는 다른 커다란 코드 부분에 대한 간략화된 인터페이스를 제공하는 객체 위키 예시 참조소스" />
+<link rel="canonical" href="https://devpiki.github.io/web/javascript/2019/04/22/javascript-facade.html" />
+<meta property="og:url" content="https://devpiki.github.io/web/javascript/2019/04/22/javascript-facade.html" />
 <meta property="og:site_name" content="Piki’s blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-03-12T13:50:19+09:00" />
+<meta property="article:published_time" content="2019-04-22T13:50:19+09:00" />
 <script type="application/ld+json">
-{"url":"https://devpiki.github.io/html/web/2019/03/12/html-ol.html","author":{"@type":"Person","name":"piki"},"headline":"목록 태그 - ol","description":"&lt;html lang=&quot;ko&quot;&gt; &lt;!--oltest.html --&gt; &lt;head&gt; &lt;title&gt;ol 태그&lt;/title&gt; &lt;meta charset=&quot;UTF-8&quot;/&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;ol 태그 &lt;/h1&gt; &lt;ol&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;시작번호 지정 : start &lt;/h1&gt; &lt;ol start=&quot;50&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;특정 목록의 번호 지정 : value &lt;/h1&gt; &lt;ol start=&quot;50&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li value=&quot;60&quot;&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;h1&gt;type 지정 : 1 | A | a | I | i &lt;/h1&gt; &lt;ol type=&quot;1&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;A&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;a&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;I&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;ol type=&quot;i&quot;&gt; &lt;li&gt;Coffee&lt;/li&gt; &lt;li&gt;Tea&lt;/li&gt; &lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt; &lt;/body&gt; &lt;/html&gt; 결과","datePublished":"2019-03-12T13:50:19+09:00","dateModified":"2019-03-12T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/html/web/2019/03/12/html-ol.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://devpiki.github.io/web/javascript/2019/04/22/javascript-facade.html","author":{"@type":"Person","name":"piki"},"headline":"Facade Pattern","description":"퍼사드 패턴 Facade(외관) 는 “건물의 정면”을 의미 퍼사드는 다른 커다란 코드 부분에 대한 간략화된 인터페이스를 제공하는 객체 위키 예시 참조소스","datePublished":"2019-04-22T13:50:19+09:00","dateModified":"2019-04-22T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/web/javascript/2019/04/22/javascript-facade.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Font Awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -109,77 +109,95 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-  <h1 class="post-title p-name" itemprop="name headline">목록 태그 - ol</h1>
+  <h1 class="post-title p-name" itemprop="name headline">Facade Pattern</h1>
   <p class="post-meta">
-    <time class="dt-published" datetime="2019-03-12T13:50:19+09:00" itemprop="datePublished">Mar 12, 2019
+    <time class="dt-published" datetime="2019-04-22T13:50:19+09:00" itemprop="datePublished">Apr 22, 2019
     </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">piki</span></span></p>
 </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!--oltest.html --&gt;</span> 
+    <ul>
+  <li>퍼사드 패턴
+    <ul>
+      <li>Facade(외관) 는 “건물의 정면”을 의미</li>
+      <li>퍼사드는 다른 커다란 코드 부분에 대한 간략화된 인터페이스를 제공하는 객체</li>
+      <li><a href="https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%82%AC%EB%93%9C_%ED%8C%A8%ED%84%B4">위키</a></li>
+    </ul>
+  </li>
+  <li>예시 <a href="https://www.dofactory.com/javascript/facade-design-pattern">참조소스</a></li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span>ol 태그<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>Page Title<span class="nt">&lt;/title&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>ol 태그 <span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;ol&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>시작번호 지정 : start <span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">start=</span><span class="s">"50"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>특정 목록의 번호 지정 : value <span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">start=</span><span class="s">"50"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">value=</span><span class="s">"60"</span><span class="nt">&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>type 지정 : 1 | A | a | I | i <span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"1"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"A"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"a"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"I"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"i"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"run()"</span><span class="nt">&gt;</span>click<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">Mortgage</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">Mortgage</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">applyFor</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">amount</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// access multiple subsystems...</span>
+        <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="s2">"approved"</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">new</span> <span class="nx">Bank</span><span class="p">().</span><span class="nx">verify</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">amount</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nx">result</span> <span class="o">=</span> <span class="s2">"denied"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">new</span> <span class="nx">Credit</span><span class="p">().</span><span class="kd">get</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nx">result</span> <span class="o">=</span> <span class="s2">"denied"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">new</span> <span class="nx">Background</span><span class="p">().</span><span class="nx">check</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nx">result</span> <span class="o">=</span> <span class="s2">"denied"</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">" has been "</span> <span class="o">+</span> <span class="nx">result</span> <span class="o">+</span>
+               <span class="s2">" for a "</span> <span class="o">+</span> <span class="nx">amount</span> <span class="o">+</span> <span class="s2">" mortgage"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">Bank</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">verify</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">amount</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// complex logic ...</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">Credit</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="kd">get</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// complex logic ...</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">Background</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">check</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// complex logic ...</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">run</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">mortgage</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Mortgage</span><span class="p">(</span><span class="s2">"Joan Templeton"</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">mortgage</span><span class="p">.</span><span class="nx">applyFor</span><span class="p">(</span><span class="s2">"$100,000"</span><span class="p">);</span>
+ 
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
-<p><strong><a href="/assets/sample/html/oltest.html">결과</a></strong></p>
+
+<ul>
+  <li>복잡한 서브 시스템에 접근 할 수 있는 간단한 인터페이스를 제공 하고 싶을때 사용</li>
+  <li>사용자가 알아야 하는 서브 시스템의 범위를 줄여줌</li>
+  <li>사용자가 원할 때는 서브 시스템에 직접 접근 하여 내부 클래스를 사용 할 수 있다.</li>
+  <li><a href="https://keichee.tistory.com/183">참조</a></li>
+</ul>
+
 
   </div>
 
   <div class="PageNavigation">
     
-      <a class="prev" href="/html/web/2019/03/12/html-nav.html"><strong>[이전글]</strong> nav 태그</a>
+      <a class="prev" href="/web/javascript/2019/04/18/javascript-twemoji.html"><strong>[이전글]</strong> Twemoji (Twitter Emoji)</a>
     
     
-      <a class="next" href="/html/web/2019/03/12/html-p.html"><strong>[다음글]</strong> p 태그</a>
+      <a class="next" href="/web/javascript/2019/04/22/javascript-observer.html"><strong>[다음글]</strong> Observer Pattern</a>
     
   </div>
 <div id="disqus_thread"></div>
@@ -202,7 +220,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a></noscript><a class="u-url" href="/html/web/2019/03/12/html-ol.html" hidden></a>
+    Disqus.</a></noscript><a class="u-url" href="/web/javascript/2019/04/22/javascript-facade.html" hidden></a>
 </article>
 
       </div>
