@@ -226,17 +226,39 @@ table {
   .site-nav .page-link {
     color: #111;
     display: inline-block;
-    padding: 0 13px;
+    margin: 0 13px;
     float: left;
-    transition: background-color .5s;
-    -moz-transition: background-color .5s;
-    -webkit-transition: background-color .5s;
-    -o-transition: background-color .5s; }
+    max-height: 54px;
+    position: relative; }
+    .site-nav .page-link div {
+      background-color: #1879CE;
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: width .5s;
+      -moz-transition: width .5s;
+      -webkit-transition: width .5s;
+      -o-transition: width .5s; }
     .site-nav .page-link:not(.active):hover {
-      background-color: #eee; }
-  .site-nav .active {
-    background-color: #111;
-    color: white; }
+      color: #1879CE; }
+      .site-nav .page-link:not(.active):hover div {
+        width: 100%; }
+    .site-nav .page-link:not(.active):not(:hover) div {
+      width: 0%;
+      transition: none;
+      -moz-transition: none;
+      -webkit-transition: none;
+      -o-transition: none; }
+    .site-nav .page-link.active {
+      color: #1879CE; }
+      .site-nav .page-link.active div {
+        width: 100%;
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+        -o-transition: none; }
   @media screen and (max-width: 800px) {
     .site-nav {
       position: absolute;
@@ -275,7 +297,9 @@ table {
         line-height: 1.5;
         text-align: right;
         float: none;
-        margin-right: 0; } }
+        margin-right: 0; }
+        .site-nav .page-link div {
+          display: none; } }
 
 /**
  * Site footer
