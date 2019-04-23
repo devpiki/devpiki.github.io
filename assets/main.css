@@ -552,6 +552,13 @@ table {
 .search .search-link:hover {
   color: #9a9a9a; }
 
+#not-found {
+  text-align: center; }
+  #not-found > i {
+    font-size: 20vh;
+    color: rgba(0, 0, 0, 0.1);
+    display: block; }
+
 /**
  * Syntax highlighting styles
  */

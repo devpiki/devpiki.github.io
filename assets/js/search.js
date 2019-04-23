@@ -51,6 +51,10 @@
             }
             setSearchResultsHTML(postsListingHTML);
         } else {
+            var arr = ['fa-frown-o','fa-meh-o', 'fa-question-circle-o', 'fa-smile-o', 'fa-user-times'];
+            var x = Math.floor(Math.random() * (4 - 0 + 1)) + 0;
+            
+            document.querySelector('#not-found i').classList.add(arr[x]);
             showNoResultsMessage();
         }
     }
