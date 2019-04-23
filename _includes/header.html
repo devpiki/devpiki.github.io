@@ -1,9 +1,9 @@
-<header class="site-header" role="banner">
+<header class="site-header white" role="banner">
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><i class="fa fa-file-code-o fa-2" aria-hidden="true"></i>{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><i class="fa fa-file-code-o fa-2" aria-hidden="true"></i><!-- {{ site.title | escape }} --></a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -51,6 +51,24 @@
     {%- endif -%}
   </div>
 </header>
+<!-- <script>
+  window.addEventListener('scroll', function(e){
+    var doc = document.documentElement;
+    var a = document.querySelector('.site-header[role=banner]');
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+    if(top < 290){
+      if(a.classList.contains('black')){
+        a.classList.remove('black');
+        a.classList.add('white');
+      }      
+    }else{
+      if(a.classList.contains('white')){
+        a.classList.remove('white');
+        a.classList.add('black');  
+      }
+    }
+  });
+</script> -->
 {% if page.path == 'index.html'  %}
 <div class="site-header-container">
   <div class="scrim has-cover">
