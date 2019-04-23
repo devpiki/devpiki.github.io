@@ -439,3 +439,11 @@
     color : #9a9a9a;
   }
 }
+#not-found {
+  text-align: center;
+  > i{
+    font-size: 20vh;
+    color: rgba(0,0,0,.1);
+    display : block;
+  }
+}
