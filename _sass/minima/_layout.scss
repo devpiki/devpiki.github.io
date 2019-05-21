@@ -343,12 +343,22 @@
   ul li > a {
       color: #0600ff;
       text-decoration: underline;
+      /*&::before {
+        content : '[';
+      }
+      &::after {
+        content : ']';
+      }*/
+  }
+  &.e-content {
+    ul li > a {
       &::before {
         content : '[';
       }
       &::after {
         content : ']';
       }
+    }
   }
 }
 
