@@ -438,11 +438,17 @@ table {
     margin-bottom: 13px; }
   .post-content ul li > a {
     color: #0600ff;
-    text-decoration: underline; }
-    .post-content ul li > a::before {
-      content: '['; }
-    .post-content ul li > a::after {
-      content: ']'; }
+    text-decoration: underline;
+    /*&::before {
+      content : '[';
+    }
+    &::after {
+      content : ']';
+    }*/ }
+  .post-content.e-content ul li > a::before {
+    content: '['; }
+  .post-content.e-content ul li > a::after {
+    content: ']'; }
 
 /*search form*/
 .frm {
