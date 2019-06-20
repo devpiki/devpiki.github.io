@@ -2,7 +2,7 @@
 	"list" : [{
 		"Firstname" : "John",
 		"Lastname" : "Doe",
-		"Email" : "john@example.com",
+		"Email" : "john@example.com"
 	},{
 		"Firstname" : "Mary",
 		"Lastname" : "Moe",
@@ -10,7 +10,7 @@
 	},{
 		"Firstname" : "July",
 		"Lastname" : "Dooley",
-		"Email" : "july@greatstuff.com",
+		"Email" : "july@greatstuff.com"
 	},{
 		"Firstname" : "Anja",
 		"Lastname" : "Ravendale",
@@ -18,11 +18,11 @@
 	},{
 		"Firstname" : "Tomas",
 		"Lastname" : "Doe",
-		"Email" : "tomas@example.com",
+		"Email" : "tomas@example.com"
 	},{
 		"Firstname" : "Jain",
 		"Lastname" : "Doe",
-		"Email" : "jain@example.com",
+		"Email" : "jain@example.com"
 	}]
 }
 
