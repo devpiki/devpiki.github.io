@@ -10,9 +10,9 @@
   <meta property="og:description" content="html5, css3, javascript, html, css, web">
 
 
-  <meta name="google-site-verification" content="9Ef5Uaca8SZOaY49wItpEK354fWLKam8NqWqoNzuSTs" /><!-- Begin Jekyll SEO tag v2.5.0 -->
+  <meta name="google-site-verification" content="9Ef5Uaca8SZOaY49wItpEK354fWLKam8NqWqoNzuSTs" /><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Twemoji (Twitter Emoji) | Piki’s blog</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="Twemoji (Twitter Emoji)" />
 <meta name="author" content="piki" />
 <meta property="og:locale" content="ko" />
@@ -24,7 +24,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-04-18T13:50:19+09:00" />
 <script type="application/ld+json">
-{"url":"https://devpiki.github.io/web/javascript/2019/04/18/javascript-twemoji.html","author":{"@type":"Person","name":"piki"},"headline":"Twemoji (Twitter Emoji)","description":"https://twemoji.twitter.com/ https://github.com/twitter/twemoji 트위터 오픈 소스 이모티콘 사용 방법 - 태그 입력","datePublished":"2019-04-18T13:50:19+09:00","dateModified":"2019-04-18T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/web/javascript/2019/04/18/javascript-twemoji.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"datePublished":"2019-04-18T13:50:19+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://devpiki.github.io/web/javascript/2019/04/18/javascript-twemoji.html"},"url":"https://devpiki.github.io/web/javascript/2019/04/18/javascript-twemoji.html","author":{"@type":"Person","name":"piki"},"description":"https://twemoji.twitter.com/ https://github.com/twitter/twemoji 트위터 오픈 소스 이모티콘 사용 방법 - 태그 입력","headline":"Twemoji (Twitter Emoji)","@type":"BlogPosting","dateModified":"2019-04-18T13:50:19+09:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Font Awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -154,13 +154,13 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <span class="nt">&lt;body&gt;</span>
 
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-	<span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span>
-	<span class="nx">div</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">'I </span><span class="err">\</span><span class="s1">u2764</span><span class="err">\</span><span class="s1">uFE0F emoji!'</span><span class="p">;</span>
+	<span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">div</span><span class="dl">'</span><span class="p">);</span>
+	<span class="nx">div</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">I </span><span class="se">\</span><span class="s1">u2764</span><span class="se">\</span><span class="s1">uFE0F emoji!</span><span class="dl">'</span><span class="p">;</span>
 	<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">div</span><span class="p">);</span>
 
 	<span class="nx">twemoji</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
 
-	<span class="kd">var</span> <span class="nx">img</span> <span class="o">=</span> <span class="nx">div</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'img'</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">img</span> <span class="o">=</span> <span class="nx">div</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">img</span><span class="dl">'</span><span class="p">);</span>
 
 	<span class="c1">// note the div is preserved</span>
 	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">img</span><span class="p">.</span><span class="nx">parentNode</span> <span class="o">===</span> <span class="nx">div</span><span class="p">);</span> <span class="c1">// true</span>

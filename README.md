@@ -1,4 +1,5 @@
 * 이 블로그는 jekyll 3.8.5 , minima 테마로 만들어 졌습니다.
+* 개발 환경은 windows10 입니다.
 
 * bundle 설치
 ```text
