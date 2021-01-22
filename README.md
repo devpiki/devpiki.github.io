@@ -1,4 +1,5 @@
 * 이 블로그는 jekyll 3.8.5 , minima 테마로 만들어 졌습니다.
+* 개발 환경은 windows10 입니다.
 
 * bundle 설치
 ```text
@@ -20,6 +21,12 @@ bundle exec jekyll build -d ../master
 ```text
 cross-env JEKYLL_ENV=production jekyll build -d ../master
 ```
+
+* 배포용 빌드 - 에러 발생시
+```text
+bundle exec cross-env JEKYLL_ENV=production jekyll build -d ../master
+```
+
 * cross-env가 안깔려 있으면
 ```text
 npm i -g cross-env
