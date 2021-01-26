@@ -21,6 +21,12 @@ bundle exec jekyll build -d ../master
 ```text
 cross-env JEKYLL_ENV=production jekyll build -d ../master
 ```
+
+* 배포용 빌드 - 에러 발생시
+```text
+bundle exec cross-env JEKYLL_ENV=production jekyll build -d ../master
+```
+
 * cross-env가 안깔려 있으면
 ```text
 npm i -g cross-env
