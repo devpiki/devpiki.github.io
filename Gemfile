@@ -29,7 +29,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 
-gem "jekyll-paginate-v2"
+gem "jekyll-paginate-v2", "~> 3.0.0"
 gem "jekyll-category-pages"
 gem "jekyll-sitemap"
 
