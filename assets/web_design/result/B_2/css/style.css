@@ -45,7 +45,7 @@ width: 1200px;height: 180px;top: 100px;left: 0;display: none;
 }
 
 
-#main{height: 500px;}
+#main{height: 500px;display: block;}
 #main .slide{position: relative;overflow: hidden;height: 300px;}
 #main .slide ul{width: 100%;height: 900px;position: absolute;}
 #main .slide ul li{height: 300px;}
