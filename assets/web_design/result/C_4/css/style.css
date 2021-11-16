@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{padding: 0; margin: 0; vertical-align: top;box-sizing: border-box;}
+html, body{background-color: #fff; color: #222328;}
+a{text-decoration: none; color: inherit;display: inline-block;width: 100%; height: 100%; text-align: center;}
+ul, li {list-style-type: none;}
+.clearfix::before, .clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.modal{position:fixed;width: 100%; height: 100%; background-color: rgba(0,0,0,.3);z-index: 11;display: none;}
+.modal .modalpop{width: 500px; position: absolute;top: 50%; left: 50%;transform:translate(-50%, -50%);background-color: #fff;}
+.modal p{margin: 15px;}
+.modal p:nth-child(1){font-weight: 700; font-size: 20px;}
+.modal p:nth-child(2){}
+.modal p:nth-child(3){text-align: right;}
+.modal button{height: 30px; padding: 0 10px;}
+
+/*================*/
+#wrap{width: 1000px;height: 100%;}
+
+
+#header{float: left;width: 200px;height: 650px;position: relative;  background-color: rgb(255, 255, 224);}
+#header h1{width: 100%; height: 100px;}
+#header h1 a{padding: 32px 10px 0 10px;}
+#header h1 img{width: 100%;}
+
+#header nav{width: 100%; padding: 10px 10px 0 10px;position: relative;z-index: 1;}
+#header nav > ul{width: 100%;}
+#header nav > ul > li{}
+#header nav > ul > li > a{height: 50px;line-height: 50px;}
+#header nav > ul > li:hover > a{background-color: #d4d4d4;color: ivory;}
+#header nav .submenu{width: 180px; height: 225px;position: absolute;top: -10px;left: 190px;background-color: #d4d4d4;color: ivory;display: none;}
+#header nav .submenu li{}
+#header nav .submenu li a{height: 45px;line-height: 45px;}
+#header nav .submenu li:hover a{background-color: rgb(255, 255, 224);color:#222328;}
+
+
+
+
+.container{float: right;width: 800px;height: 650px;}
+#main{width: 100%; height: 550px;position: relative;}
+#main .slide{width: 800px; height: 350px; overflow: hidden;position: relative;}
+#main .slide ul{width: 2400px; height: 350px;position: absolute;top: 0;left: 0;}
+#main .slide ul li{float: left;}
+#main .slide ul li a{}
+#main .slide ul li a img{width: 100%; height: 350px;}
+
+
+
+#main .content{width: 100%; height: 200px;}
+#main .content section{width: 33.33%; height: 200px;float: left;}
+#main .content section h2.on{width: 100px; height: 50px; text-align: center;line-height: 40px; background-color: yellow; background-clip: content-box;padding: 5px;font-size: 20px;}
+#main .content section h2.on:hover{background-color: #eee;color: #fff;}
+
+#main .content .board{}
+#main .content .board ul{width: 100%;height: 150px;}
+#main .content .board ul li{}
+#main .content .board ul li a{width: 100%; height: 37.5px; line-height: 37.5px;font-size: 12px;text-align: left;}
+#main .content .board ul li:hover{background-color: #494949;color: #fff;}
+#main .content .board ul li a span{display: inline-block;}
+#main .content .board ul li a span.tit{height: 100%;width: 75%; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#main .content .board ul li a span.date{height: 100%;width: 25%;}
+
+
+#main .content .gall{}
+#main .content .gall ul{width: 100%; height: 150px;}
+#main .content .gall ul li{float: left; width: 33.33%;}
+#main .content .gall ul li a{padding: 35px 5px;}
+#main .content .gall ul li a img{width: 100%;}
+
+#main .content .direct h2{width: 100%; height: 200px;padding-top: 12px;}
+#main .content .direct h2 img{width: 100%; height: 100%;}
+
+
+
+
+#footer{width: 100%; height: 100px;position: relative;}
+#footer > div{float: left;}
+
+#footer .logo{width: 200px;height: 100px;}
+#footer .logo img{margin-top: 30px;}
+
+
+
+#footer .copy{width: 400px;height: 100px;text-align: center;line-height: 100px;font-weight: 500;}
+
+
+
+#footer .fam{width: 200px;height: 100px;line-height: 100px;text-align: center;padding-top: 35px;}
+
+#footer .fam select{height: 30px;}
+#footer .fam button{height: 30px;}
+
+

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*{padding: 0; margin: 0; vertical-align: top;box-sizing: border-box;}
+html, body{width: 100%; height: 100%; background-color: #ffffff; color: #222328;}
+a{text-decoration: none; color: inherit;display: inline-block;width: 100%; height: 100%; text-align: center;}
+ul, li{list-style-type: none;}
+i, em, address{font-style: normal;}
+table{border-collapse: collapse;}
+.clearfix::before, .clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.hidden-title{width: 1px; height: 1px;z-index: -9999999; text-indent: -9999999px; overflow: hidden; position: absolute !important; margin: -1px; font-size: 1px;}
+
+/*=======================*/
+.modal{position: fixed; width: 100%; height: 100%;background-color: rgba(0,0,0,.3);z-index: 11;display: none;}
+.modal .modal-pop{width: 500px; position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);background-color: #fff;}
+.modal .modal-pop p{margin: 15px;}
+.modal .modal-pop p:nth-child(1){font-weight: 700; font-size: 20px;}
+.modal .modal-pop p:nth-child(2){}
+.modal .modal-pop p:nth-child(3){text-align: right;}
+.modal .modal-pop p:nth-child(3) button{height: 30px; padding: 0 10px;}
+
+
+
+#wrap{width: 1200px; height: 100%;margin: 0 auto;}
+
+#header{position: relative;width: 100%; height: 100px;}
+#header h1{float: left; width: 200px; height: 100px;}
+#header h1 a{}
+#header h1 a img{width: 100%; margin-top: 30px;}
+#header nav{float: right; margin-top: 30px;margin-right: 10px;width: 800px;position: relative;z-index: 1;}
+#header nav>ul{position: absolute;top: 0;left: 0;}
+#header nav li:hover > a{background-color: #4a4afa; color: #fff;}
+#header nav>ul>li{float: left;width: 200px;}
+#header nav>ul>li>a{height: 40px;line-height: 40px;}
+#header nav ul.submenu{height: 170px;display: none;background-color: #fff;}
+#header nav ul.submenu li{}
+#header nav ul.submenu li a{height: 40px; line-height: 40px;}
+
+#main{position: relative;width: 100%; height: 500px;}
+#main .slide{position: relative;width: 100%;height: 300px; overflow: hidden;}
+#main .slide ul{position: absolute;top: 0;left: 0;width: 100%; height: 900px;}
+#main .slide ul li{}
+#main .slide ul li a{}
+#main .slide ul li a img{width: 1200px; height: 300px;}
+
+#main .contents{position: relative;width: 100%; height: 200px;}
+#main .contents section{float: left;width: 400px;height: 200px;}
+#main .board h2{position: absolute;top: 0;height: 50px;font-size: 20px;width: 100px;line-height: 50px;text-align: center;background-color: #d3d3d3;color: #666;cursor: pointer;}
+#main .board ul{position: absolute;top: 50px;left: 0;width: 400px;height: 150px;}
+#main .board h2.b01{left: 0;}
+#main .board ul.b01{}
+#main .board ul.b01 li{}
+#main .board ul.b01 li a{height: 30px; width: 100%;line-height: 30px;text-align: left;}
+#main .board ul.b01 li a span{float: right;}
+#main .board h2.b02{left: 100px;}
+#main .board ul.b02{display: none;}
+#main .board ul.b02 li{float: left; width: 33.33%;height: 100%;}
+#main .board ul.b02 li a{}
+#main .board ul.b02 li a img{margin-top: 25px;}
+#main .board h2.on{background-color: #fff;color: #000;}
+
+#main .banner{}
+#main .banner h2{}
+#main .banner a{}
+#main .banner a img{width: 100%; height: 100%;}
+
+#main .direct{}
+#main .direct h2{}
+#main .direct a{}
+#main .direct a img{width: 100%; height: 100%;}
+
+#footer{position: relative;width: 100%; height: 100px;}
+#footer div{float: left;height: 100px;}
+#footer div.logo{width: 200px;}
+#footer div.logo img{margin-top: 30px;}
+
+#footer div.copy{width: 800px;}
+#footer div.copy address{height: 100%; width: 100%;line-height: 40px;}
+#footer div.copy address p{}
+
+#footer div.sns{width: 200px;}
+#footer div.sns ul{}
+#footer div.sns ul li{float: left;width: 33.33%; height: 100px;}
+#footer div.sns ul li a{}
+#footer div.sns ul li a img{width: 50px;margin-top: 25px;}
+
+
+
+
