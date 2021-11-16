@@ -7,7 +7,7 @@ $(document).ready(function(){
     });
 
     var idx = 0;
-    setInterval(() => {
+    setInterval(function(){
         idx -= 1200;
         if(idx < -2400) idx = 0;
         $('#main .slide ul').animate({left:idx+'px'}, 1000);
