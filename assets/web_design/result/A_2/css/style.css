@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;vertical-align: top;box-sizing: border-box;}
+html, body{background-color: #fff;color: #333;width: 100%; height: 100%;}
+a{display: inline-block; color: inherit; text-decoration: none;text-align: center;width: 100%; height: 100%;}
+ul, li{list-style-type:none;}
+table{border-collapse: collapse;}
+i, em, address{font-style: normal;}
+.clearfix::before, .clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.hidden-title{width: 1px; height: 1px; position: absolute;overflow: hidden;line-height: 1px; z-index: -999999;text-indent: -999999;margin: -1px;font-size: 1px;}
+
+/*=================================================*/
+
+.modal{position: fixed;width: 100%; height: 100%;background-color: rgba(0,0,0,.3);z-index: 11;display: none;}
+.modal .modal-pop{width: 500px; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); background-color: #fff;}
+.modal div{margin: 15px;}
+.modal div:nth-child(1){}
+.modal div:nth-child(2){}
+.modal div:nth-child(3){ text-align: right;}
+.modal button{}
+
+#wrap{width: 1200px;margin: 0 auto;}
+#header{position: relative;width: 100%;height: 100px;}
+#header h1{float: left;height: 100%;width: 200px;}
+#header h1 a{}
+#header h1 a img{height: 40px; margin: 30px 0;}
+#header nav{float: right;margin: 60px 10px 0 0;width: 800px;position: relative;}
+#header nav > ul{position: absolute;top: 0;left: 0;z-index: 2;}
+#header nav > ul > li{width: 200px;float: left;}
+#header nav > ul > li > a{height: 40px;line-height: 40px;}
+#header nav > ul > li:hover > a{background-color: #1d8844;color: #fff;}
+#header nav ul.submenu{background-color:#1d8844 ;color: #fff;height: 140px;display: none;}
+#header nav ul.submenu li{}
+#header nav ul.submenu li a{height: 40px;line-height: 40px;}
+#header nav ul.submenu li:hover a{background-color: #fff;color: #1d8844;}
+#header .nav-bg{position: absolute;top: 100px;left: 0;background-color:#1d8844 ;width: 100%; height: 140px;z-index: 1;display: none;}
+
+
+#main{position: relative;width: 100%;height: 500px;}
+#main .slide{width: 100%; height: 300px; position: relative;overflow: hidden;}
+#main .slide ul{position: absolute;top: 0; left: 0;width: 3600px;}
+#main .slide ul li{float: left;width: 1200px;height: 300px;}
+#main .slide ul li a{}
+#main .slide ul li a img{width: 100%; height: 100%;}
+
+#main .contents{width: 100%; height: 200px;}
+#main .contents section{float: left;width: 400px;height: 100%;}
+#main .contents h2.title{width: 100px;text-align: center;height: 40px;font-size: 20px;line-height: 40px;background-color: #eee;color: #b2b2b2;}
+#main .contents h2.on{color:#434748 ;background-color: #fff;}
+
+#main .contents .board{}
+#main .contents .board h2{}
+#main .contents .board ul{width: 100%;height: 160px;}
+#main .contents .board ul li{width: 100%; height: 32px;line-height: 32px;}
+#main .contents .board ul li a{text-align: left;}
+#main .contents .board ul li a span{float: right;}
+
+#main .contents .gall{}
+#main .contents .gall h2{}
+#main .contents .gall ul{width: 100%;height: 160px;}
+#main .contents .gall ul li{float: left; width: 33.33%;height: 100%;}
+#main .contents .gall ul li a{}
+#main .contents .gall ul li a img{margin-top: 30px;}
+
+#main .contents .banner{}
+#main .contents .banner a{}
+#main .contents .banner a img{width: 100%; height: 100%;}
+
+#footer{position: relative;width: 100%;height: 100px;}
+#footer div{float: left;height: 100%;}
+#footer .logo{width: 200px; height: 100%;}
+#footer .logo img{margin-top: 30px;}
+#footer .copy{width: 800px; height: 100%;text-align: center;
+    line-height: 30px;
+    padding-top: 20px;}
+#footer .copy address{}
+#footer .copy p{}
+#footer .fam{width: 200px; height: 100%;text-align: center;padding-top: 37.5px;}
+#footer .fam select{height: 25px;}
+#footer .fam button{height: 25px;}

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;vertical-align: top;box-sizing: border-box;}
+html, body{width: 100%; height: 100%;background-color: #f2f2f2;color: #333;}
+a{text-decoration: none;color: inherit;width: 100%;height: 100%;text-align: center;display: inline-block;}
+ul, li{list-style-type: none;}
+.clearfix::before,.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.hide-tit{width: 1px;height: 1px;margin: -1px;position: absolute;text-indent: -99999;overflow: hidden;z-index: -99999;font-size: 1px;}
+
+.modal{position: fixed;width: 100%; height: 100%;z-index: 1;background-color: rgba(0,0,0,.3);display: none;}
+.modal .modal-pop{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 500px;background-color: #f2f2f2;}
+.modal .modal-pop p{padding: 5px 10px;}
+.modal .modal-pop p:nth-child(1){}
+.modal .modal-pop p:nth-child(2){}
+.modal .modal-pop p:nth-child(3){text-align: right;}
+.modal .modal-pop button{}
+
+#wrap{width: 1200px;margin: 0 auto;}
+#header{position: relative;width: 100%;height: 100px;}
+#header h1{float: left;width: 200px; height: 100%;}
+#header h1 a{}
+#header h1 a img{width: 100%;margin-top: 30px;}
+#header nav{float: right; position: relative;width: 800px;margin: 60px 20px 0 0;}
+#header nav>ul{position: absolute;top: 0;left: 0;width: 100%;z-index: 2;}
+#header nav li{width: 200px;height: 40px;line-height: 40px;}
+#header nav>ul>li{float: left;}
+#header nav>ul>li>a{}
+#header nav>ul>li:hover>a{background-color: #ff5050;color: #fff;}
+#header nav ul.submenu{background-color: #ff5050;color: #fff;display: none;}
+#header nav ul.submenu li{}
+#header nav ul.submenu li a{}
+#header ul.submenu li:hover a{background-color: #f2f2f2;color: #333;}
+#header .nav-bg{background-color: #ff5050;color: #fff;position: absolute;top: 100px;left: 0;width: 100%;z-index: 1;height: 120px;display: none;}
+
+
+
+#main{position: relative;width: 100%;height: 500px;}
+#main .slide{position: relative;width: 100%;height: 300px;overflow: hidden;}
+#main .slide ul{}
+#main .slide ul li{}
+#main .slide ul li a{}
+#main .slide ul li a img{width: 100%;height: 100%;}
+#main .contents{position: relative;width: 100%;height: 200px;}
+#main .contents section{float: left;width: 400px;height: 100%;}
+#main .contents section h2.title{font-size: 20px;width: 100px; height: 40px;text-align: center;line-height: 40px;background-color: #d0d0d0;
+    color: #eee;}
+#main .contents section h2.on{background-color: #f2f2f2;color: #ff5050;}
+#main .contents .board{}
+#main .contents .board ul{width: 100%; height: 160px;}
+#main .contents .board ul li{height: 31px;line-height: 31px;}
+#main .contents .board ul li a{text-align: left;}
+#main .contents .board ul li a span{float: right;}
+
+#main .contents .gall{}
+#main .contents .gall ul{width: 100%; height: 160px;}
+#main .contents .gall ul li{float: left;width: 33.33%;}
+#main .contents .gall ul li a{}
+#main .contents .gall ul li a img{width: 100px;height: 100px;margin-top: 30px;}
+#main .contents .direct{}
+#main .contents .direct a{}
+#main .contents .direct a img{width: 100%; height: 100%;}
+
+
+#footer{position: relative;width: 100%;height: 100px;}
+#footer .footer-menu{position: absolute;top: 0;left: 0;width: 1000px;height: 50px;line-height: 50px;}
+#footer .footer-menu ul{}
+#footer .footer-menu ul li{float: left;width: 33.33%;}
+#footer .footer-menu ul li a{}
+#footer .copy{position: absolute;top: 50px;left: 0;width: 1000px;height: 50px;line-height: 50px;text-align: center;}
+#footer .familly{position: absolute;top: 0;left: 1000px;width: 200px;height: 100px;line-height: 100px;}
+#footer .familly select{height: 30px;width: 150px;margin-top: 35px;}
